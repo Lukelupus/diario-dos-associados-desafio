@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './Fonts/HelveticaUltraLt_0.ttf'
+import './Fonts/ps.ttf'
+import './Fonts/Roboto-Light_0.ttf'
+import './Fonts/Roboto-Regular_0.ttf'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

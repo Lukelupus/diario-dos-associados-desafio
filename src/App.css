@@ -1,38 +1,148 @@
-.App {
+
+:root {
+  font-size: 16;
+  font-family:'Helvetica', 'Neue', 'Arial', sans-serif;
+  --text-primary: #191919;
+  --text-secondary: #337ab7;
+  --bg-primary: white; 
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body {
+  line-height: 1.42857;
+  color: var(--text-primary);
+  background-color:var(--bg-primary);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Navbar */
+
+.navbar-section {
+  height: 50px;
+  width: 100%;
+  left: 0px;
+  top: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-head {
+display: grid;
+background-color: transparent;
+position: absolute;
+width: 100%;
+font-family: 'Roboto Regular';
+
+  
+}
+
+.btn-assine {
+  background-color: #F7941D;
+  color: var(--bg-primary);
+  font-family: 'Roboto Regular';
+  border-radius: 10%;
+  border: #F7941D;
+  padding: .75em;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+
+}
+
+.navbar {
+  z-index: 1;
   display: flex;
-  flex-direction: column;
+  background-color: transparent;
+  justify-content: space-around;
   align-items: center;
+  font-size: 14px;
+
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 3px;
+  position: absolute;
+  right: 1.25em;
+  top: -1.15em;
+ 
+  
+  
 }
 
-.App-link {
-  color: #61dafb;
+.nav-item {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+.logo-container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.hamburguer {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  left: 5px;
+  top: 1px;
+  background-color: #fafafa;
+  border: 1px solid #ececec;
+  border-radius: 10%;
+
+}
+
+.hamburguer-top,.hamburguer-mid,.hamburguer-bottom {
+  width: 60%;
+  border: 2px solid;
+  position: absolute;
+  left: 15%;
+  margin-bottom: 2px;
+}
+
+.hamburguer-mid {
+  top: 25%;
+}
+.hamburguer-bottom {
+  top: 52.5%;
+}
+
+/* Publicidade */
+.ad-box {
+  background-color: red;
+}
+.publicidade {
+
+  position: absolute;
+  height: 20px;
+  left: 3.12%;
+  right: 74.06%;
+  top: calc(50% - 20px/2 - 25px);
+  
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+display: flex;
+align-items: center;
+
+color: #191919;
+}
+/* Mobile */
+
+@media only screen and (max-width: 767px) {
+  .logo-container {
+    display: none;
   }
 }

@@ -22,7 +22,7 @@ return (
      
     </Desktop>
     <Mobile>
-   <a href="https://www.hidglobal.com/omni-id" rel="noreferrer" target="_blank"> <img className="ad-img" alt="Estado de Minas" src="imagens/Bitmap.png"></img>
+   <a href={props.href} rel="noreferrer" target="_blank"> <img className="ad-img" alt={props.alt} src={props.src}></img>
    </a>
     </Mobile>
 </div>

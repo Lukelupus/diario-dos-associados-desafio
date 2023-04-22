@@ -16,18 +16,16 @@ const Desktop = ({ children }) => {
 function Publicidade(props) {
 return (
 <section className="ad-section">
-
+<div className="ad-box">
 <h3 className="publicidade">Publicidade</h3>
     <Desktop>
      
     </Desktop>
-    <Tablet>
-       
-    </Tablet>
     <Mobile>
-       
+   <a href="https://www.hidglobal.com/omni-id" rel="noreferrer" target="_blank"> <img className="ad-img" alt="Estado de Minas" src="imagens/Bitmap.png"></img>
+   </a>
     </Mobile>
-
+</div>
 </section>
 )
 }

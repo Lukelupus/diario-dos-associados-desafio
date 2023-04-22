@@ -1,10 +1,9 @@
-
 :root {
   font-size: 16;
-  font-family:'Helvetica', 'Neue', 'Arial', sans-serif;
+  font-family: 'Helvetica', 'Neue', 'Arial', sans-serif;
   --text-primary: #191919;
   --text-secondary: #337ab7;
-  --bg-primary: white; 
+  --bg-primary: white;
   text-align: center;
 }
 
@@ -12,26 +11,40 @@
 body {
   line-height: 1.42857;
   color: var(--text-primary);
-  background-color:var(--bg-primary);
+  background-color: var(--bg-primary);
+  padding: 1em;
 }
 
 /* Navbar */
 
-.navbar-section {
-  height: 50px;
+.nav-box {
+  background: rgba(0, 0, 0, 0.0001);
+  box-shadow: inset 0px -1px 0px rgba(217, 217, 217, 0.498039), inset 0px 0px 1px 0px rgba(217, 217, 217, 0.498039);
+  height: 30px;
+  z-index: 999;
   width: 100%;
+}
+
+.navbar-section {
+  position: absolute;
+  width: fit-content;
+  height: 50px;
   left: 0px;
   top: 0px;
+
 }
 
 .navbar-head {
-display: grid;
-background-color: transparent;
-position: absolute;
-width: 100%;
-font-family: 'Roboto Regular';
+  display: grid;
+  background-color: transparent;
+  font-family: 'Roboto Regular';
+  justify-content: space-between;
 
-  
+}
+
+.title {
+  height: 3.25em;
+  z-index: -99;
 }
 
 .btn-assine {
@@ -40,7 +53,7 @@ font-family: 'Roboto Regular';
   font-family: 'Roboto Regular';
   border-radius: 10%;
   border: #F7941D;
-  padding: .75em;
+  padding: .5em;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
@@ -62,45 +75,41 @@ font-family: 'Roboto Regular';
 
 .navbar-nav {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 3px;
   position: absolute;
-  right: 1.25em;
-  top: -1.15em;
- 
-  
-  
+  bottom: 0;
+  top: 1px;
+  flex-direction: row;
 }
 
 .nav-item {
   justify-content: center;
   align-items: center;
   display: flex;
- 
+
 }
 
 
 .logo-container {
- display: flex;
- justify-content: center;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hamburguer {
   position: absolute;
   width: 34px;
   height: 34px;
-  left: 5px;
-  top: 1px;
+  left: 8px;
+  top: 12.5%;
   background-color: #fafafa;
   border: 1px solid #ececec;
   border-radius: 10%;
 
 }
 
-.hamburguer-top,.hamburguer-mid,.hamburguer-bottom {
+.hamburguer-top,
+.hamburguer-mid,
+.hamburguer-bottom {
   width: 60%;
   border: 2px solid;
   position: absolute;
@@ -111,35 +120,44 @@ font-family: 'Roboto Regular';
 .hamburguer-mid {
   top: 25%;
 }
+
 .hamburguer-bottom {
   top: 52.5%;
 }
 
+
 /* Publicidade */
-.ad-box {
-  background-color: red;
-}
-.publicidade {
-
+.ad-section {
   position: absolute;
-  height: 20px;
-  left: 3.12%;
-  right: 74.06%;
-  top: calc(50% - 20px/2 - 25px);
-  
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-/* identical to box height, or 143% */
-
-display: flex;
-align-items: center;
-
-color: #191919;
+  width: 25em;
+  height: 70px;
+  left: 0px;
+  top: 75px;
 }
-/* Mobile */
+
+.publicidade {
+  position: absolute;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  align-items: left;
+  color: #191919;
+  margin: 0;
+  bottom: 95%;
+  left: 3%;
+  z-index: 999;
+}
+
+.ad-img {
+  position: absolute;
+  left: 3%;
+  top: 5%;
+  width: 87.5%;
+}
+
+/* Desktop */
 
 @media only screen and (max-width: 767px) {
   .logo-container {

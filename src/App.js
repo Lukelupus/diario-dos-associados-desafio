@@ -4,6 +4,7 @@ import Publicidade from "./Components/Publicidade";
 import Titulo from "./Components/Titulo";
 import Colunista from "./Components/Colunista";
 import Artigo from "./Components/Artigo";
+import LeiaMais from "./Components/LeiaMais";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         name="Tamaki Ryushi"
       />
       <Artigo img="imagens/elenco-bacurau-mobile.png" />
+      <LeiaMais />
     </div>
   );
 }

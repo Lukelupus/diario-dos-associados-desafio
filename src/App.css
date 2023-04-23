@@ -516,6 +516,110 @@ color: #333333;
 
 }
 
+/* Leia + */
+
+.leia-mais-section {
+
+  position: absolute;
+  width: 333px;
+  height: 388px;
+  left: 10px;
+  top: 1842px;
+  border-top: 2px solid #D1D1D1;
+  border-bottom: 2px solid #D1D1D1;
+}
+
+.leia-mais-titulo {
+  
+position: absolute;
+height: 25px;
+left: 2%;
+right: 64.78%;
+top: calc(45% - 25px/2 - 166.5px);
+
+font-family: 'Merriweather';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 25px;
+text-transform: uppercase;
+justify-content: space-between;
+color: #191919;
+}
+
+.artigo-card {
+
+position: absolute;
+left: 2.33%;
+right: 0%;
+top: 70.36%;
+bottom: 3.87%;
+}
+
+.artigo-card:nth-child(2) {
+  
+  position: absolute;
+  left: 2.33%;
+  right: 0%;
+  top: 13.66%;
+  bottom: 60.57%;  
+  
+}
+
+.artigo-card:nth-child(3) {
+  position: absolute;
+  left: 2.33%;
+  right: 0%;
+  top: 42.01%;
+  bottom: 32.22%;
+
+}
+
+.card-img {
+  position: absolute;
+width: 100px;
+height: 100px;
+left: 0px;
+top: calc(50% - 100px/2);
+border-radius: 2px;
+}
+
+.card-data {
+  position: absolute;
+  height: 16px;
+  left: 32.6%;
+  right: 23.95%;
+  top: calc(47% - 16px/2 - 42px);
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+
+  color: #666666;
+}
+
+.card-titulo {
+  position: absolute;
+  width: 179px;
+  height: 54px;
+  left: 110px;
+  top: 22px;
+
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+
+  color: #004071;
+  
+
+}
+
+
+
 
 /* Desktop */
 

@@ -217,6 +217,208 @@ body {
   color: #333333;
 }
 
+/* Colunista */
+
+.author-box {
+  position: absolute;
+  width: 221px;
+  height: 80px;
+  left: 10px;
+  top: 430px;
+}
+
+.colunista-btn {
+  position: absolute;
+  left: 42.99%;
+  right: 9.95%;
+  top: 0%;
+  bottom: 71.25%;
+  text-align: center;
+  background: #004071;
+  border-radius: 4px;
+
+}
+
+.colunista-text {
+  height: 14px;
+  left: 19.23%;
+  right: 18.27%;
+  bottom: -25%;
+  position: absolute;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.author-name {
+  position: absolute;
+height: 21px;
+left: 42.99%;
+right: 3.17%;
+top: calc(25% - 21px/2 + 2.5px);
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #333333;
+}
+
+.fav-clock {
+  position: absolute;
+  left: 42.99%;
+  right: 46.15%;
+  top: 70%;
+  bottom: 0%;
+
+}
+
+.coluna-time {
+  position: absolute;
+  height: 22px;
+  left: 56.11%;
+  right: 0%;
+  top: calc(34% - 22px/2 + 28px);
+  width: 10em;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+
+  color: #363636;
+}
+
+.social-networks {
+  position: absolute;
+  width: 110px;
+  height: 30px;
+  right: 100%;
+
+}
+
+.social-box {
+  position: absolute;
+  width: 300px;
+  height: 120px;
+  left: 42.5%;
+  top: 520px;
+}
+
+.google-news {
+  width: 200px;
+  height: 30px;
+  top: 500px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: #EAEAEA;
+  border-radius: 4px;
+
+}
+
+.social-circle {
+
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 10%;
+
+}
+
+.whatsapp {
+  background-color: #1BD741;
+  border-radius: 100%;
+  position: absolute;
+  left: 35%;
+}
+
+.icon {
+  fill: #fff;
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+
+  
+}
+
+.whatsapp-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.twitter {
+  border-radius: 100%;
+  background-color: #55ACEE;
+  left: 0%;
+}
+
+
+.twitter-icon {
+  width: 18px;
+  height: 18px;
+  bottom: 5px;
+  left: 6px;
+}
+.facebook {
+  background-color: #3B5998;
+  border-radius: 100%;
+  left: -35%;
+}
+
+.facebook-icon {
+  height: 70%;
+  width: 70%;
+  left: 15%;
+}
+
+.whatsapp-icon {
+  position: absolute;
+  top: 14.5%;
+  left: 15%;
+  fill: #ececec;
+  height: 70%;
+  width: 70%;
+}
+
+.siga-google {
+  position: absolute;
+  text-decoration: none;
+  height: 14px;
+  right: 73.23%;
+  top: calc(50% - 14px/2 - 0.02px);
+
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #333333;
+}
+
+.google-img {
+  position: absolute;
+  left: 110%;
+  top: -30%;
+}
+
 /* Desktop */
 
 @media only screen and (max-width: 767px) {

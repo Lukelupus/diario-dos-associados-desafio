@@ -129,7 +129,7 @@ body {
 /* Publicidade */
 .ad-section {
   position: absolute;
-  width: 25em;
+  width: 23em;
   height: 70px;
   left: 0px;
   top: 75px;
@@ -308,7 +308,7 @@ color: #333333;
 
 .social-box {
   position: absolute;
-  width: 300px;
+  
   height: 120px;
   left: 42.5%;
   top: 520px;
@@ -418,6 +418,104 @@ color: #333333;
   left: 110%;
   top: -30%;
 }
+
+/* Imagem Box */
+
+.img-box {
+
+  position: absolute;
+  width: 95%;
+  height: 256px;
+  left: 9.66px;
+  top: 562px;
+}
+
+.artigo-img {
+  position: absolute;
+  width: 350px;
+  height: 199px;
+  left: calc(40% - 300px/2);
+  top: 0px;
+  border-radius: 0.606673px;
+}
+
+.legenda-img {
+  position: absolute;
+  height: 48px;
+  left: 10.22%;
+  right: 0.11%;
+  top: calc(90% - 48px/2 - 12.5px);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #191919;
+}
+
+.fonte-src {
+  position: absolute;
+  height: 22px;
+  left: 10.22%;
+  right: 58.11%;
+  top: calc(92% - 22px/2 + 27.5px);
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #777777;
+
+}
+
+.camera {
+  position: absolute;
+  width: 24px;
+  height: 20px;
+  left: 0.22%;
+  right: 93.11%;
+  top:210px;
+  bottom: 76.62%;
+
+  color: #191919;
+  mix-blend-mode: normal;
+  opacity: 0.54;
+}
+
+.text-to-speech {
+  position: absolute;
+  width: 333px;
+  height: 50px;
+  top: 310px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+
+.audio {
+  display: none;
+}
+
+.corpo-artigo {
+  position: absolute;
+  width: 336px;
+  height: 646px;
+  left: 10px;
+  top: 936px;
+
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21.75px;
+  line-height: 212%;
+  /* or 212% */
+
+
+color: #333333;
+
+}
+
 
 /* Desktop */
 

@@ -619,6 +619,71 @@ border-radius: 2px;
 }
 
 
+/* Continuação */
+
+
+.repercusao-box {
+  position: absolute;
+  width: 300px;
+  height: 626px;
+  left: 20px;
+  top: 2229px;
+
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 212%;
+  /* or 212% */
+
+
+color: #333333;
+}
+
+.corrida-box {
+  position: absolute;
+  width: 300px;
+  height: 626px;
+  left: 20px;
+  top: 3359px;
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 212%;
+  /* or 212% */
+
+
+color: #333333;
+}
+
+.break {
+  display: block;
+  margin-bottom: 2px;
+  border: none;
+}
+
+.repercusao-titulo {
+
+  width: 102px;
+  height: 34px;
+  font-style: normal;
+  font-weight: 700;
+  
+  line-height: 212%;
+  color: #333333;
+}
+
+/* Ad Bottom */
+
+.advertise {
+
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  left: 20px;
+  top: 3105px;
+}
 
 
 /* Desktop */

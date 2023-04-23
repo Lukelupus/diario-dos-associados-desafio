@@ -5,6 +5,10 @@ import Titulo from "./Components/Titulo";
 import Colunista from "./Components/Colunista";
 import Artigo from "./Components/Artigo";
 import LeiaMais from "./Components/LeiaMais";
+import Continuacao from "./Components/Continuacao";
+import Advertise from "./Components/Advertise";
+import { repercussao } from "./Components/repercussao";
+import { corridaPeloOscar } from "./Components/corridaPeloOscar";
 
 function App() {
   return (
@@ -22,6 +26,19 @@ function App() {
       />
       <Artigo img="imagens/elenco-bacurau-mobile.png" />
       <LeiaMais />
+      <Continuacao
+        classe="repercusao-box"
+        subClasse="repercusao-titulo"
+        subtitulo="Repercussão"
+        texto={repercussao}
+      />
+      <Advertise src="imagens/wemobi.png" alt="We Mobi Viagem" />
+      <Continuacao
+        classe="corrida-box"
+        subClasse="corrida-titulo"
+        subtitulo="Corrida Pelo Oscar"
+        texto={corridaPeloOscar}
+      />
     </div>
   );
 }

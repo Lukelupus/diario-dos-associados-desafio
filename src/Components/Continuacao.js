@@ -8,7 +8,7 @@ function Continuacao(props) {
       <h3 className={subClasse}>{subtitulo}</h3>
       {texto.map((e, index) => {
         return (
-          <span index={index} className="continucação-paragrafo">
+          <span key={index} className="continucação-paragrafo">
             {e.paragrafo}
             <br></br>
             <hr className="break"></hr>

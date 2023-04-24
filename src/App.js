@@ -7,6 +7,8 @@ import Artigo from "./Components/Artigo";
 import LeiaMais from "./Components/LeiaMais";
 import Continuacao from "./Components/Continuacao";
 import Advertise from "./Components/Advertise";
+import Bottom from "./Components/Bottom";
+import Comentarios from "./Components/Comentarios";
 import { repercussao } from "./Components/repercussao";
 import { corridaPeloOscar } from "./Components/corridaPeloOscar";
 
@@ -39,6 +41,8 @@ function App() {
         subtitulo="Corrida Pelo Oscar"
         texto={corridaPeloOscar}
       />
+      <Bottom />
+      <Comentarios />
     </div>
   );
 }

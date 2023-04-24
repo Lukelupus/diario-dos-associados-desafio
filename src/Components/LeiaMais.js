@@ -7,7 +7,7 @@ function LeiaMais() {
       <h3 className="leia-mais-titulo">LEIA MAIS</h3>
       {artigos.map((e, index) => {
         return (
-          <div index={index} className="artigo-card">
+          <div key={index} className="artigo-card">
             <img className="card-img" src={e.imagem} alt={e.alt}></img>
             <span className="card-data">{e.data}</span>
             <span className="card-titulo">{e.titulo}</span>

@@ -15,7 +15,7 @@ function Sidebar() {
         <span className="ml-heading">MAIS LIDAS</span>
         {maisLidas.map((e, index) => {
           return (
-            <div className="noticia-box">
+            <div key={index} className="noticia-box">
               <p className="mais-lidas-data">{e.data}</p>
               {e.coroa ? (
                 <img src="imagens/ico-premium.png" alt="premium"></img>

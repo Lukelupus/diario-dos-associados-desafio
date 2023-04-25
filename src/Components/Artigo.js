@@ -1,16 +1,41 @@
 import React from "react";
+import { useMediaQuery } from "react-responsive";
 
-function Artigo(props) {
+const Mobile = ({ children }) => {
+  const isMobile = useMediaQuery({ maxWidth: 991 });
+  return isMobile ? children : null;
+};
+const Desktop = ({ children }) => {
+  const isDesktop = useMediaQuery({ minWidth: 992 });
+  return isDesktop ? children : null;
+};
+
+function Artigo() {
   return (
     <section className="artigo-section">
       <div className="img-box">
-        <img className="artigo-img" src={props.img} alt="Bacurau"></img>
-        <img className="camera" src="imagens/camera.png" alt="camera"></img>
-        <p className="legenda-img">
-          Após dois anos, longa voltou a ser elegível para concorrer ao Oscar
-          2021 e causou grande repercussão
-        </p>
-        <p className="fonte-src">(foto: Divulgação)</p>
+        <Mobile>
+          <img
+            className="artigo-img"
+            src="imagens/elenco-bacurau-mobile.png"
+            alt="Bacurau"
+          ></img>
+        </Mobile>
+        <Desktop>
+          <img
+            className="artigo-img"
+            src="imagens/elenco-bacurau-desktop.png"
+            alt="Bacurau"
+          ></img>
+        </Desktop>
+        <div className="legenda-completa">
+          <img className="camera" src="imagens/camera.png" alt="camera"></img>
+          <p className="legenda-img">
+            Após dois anos, longa voltou a ser elegível para concorrer ao Oscar
+            2021 e causou grande repercussão
+          </p>
+          <p className="fonte-src">(foto: Divulgação)</p>
+        </div>
         <div className="text-to-speech">
           {/* <audio
             controls

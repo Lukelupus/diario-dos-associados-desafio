@@ -13,6 +13,7 @@ function Colunista(props) {
         <p className="coluna-time">02/02/2021 08:22</p>
       </div>
       <div className="social-box">
+        <span className="compartilhe-colunista">compartilhe</span>
         <div className="social-networks">
           <div
             className="social-circle facebook"

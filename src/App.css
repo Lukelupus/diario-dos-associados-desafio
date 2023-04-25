@@ -5,14 +5,23 @@
   --text-secondary: #337ab7;
   --bg-primary: white;
   text-align: left;
+  height: 100vh;
 }
 
+body>#root>div {
+  height: 100vh;
+}
 
 body {
   line-height: 1.42857;
   color: var(--text-primary);
   background-color: var(--bg-primary);
   padding: 1em;
+  height: fit-content;
+}
+
+button {
+  cursor: pointer;
 }
 
 /* Navbar */
@@ -673,6 +682,10 @@ body {
   color: #333333;
 }
 
+.continue-bem-informado {
+  display: none;
+}
+
 /* Ad Bottom */
 
 .advertise-bottom-page {
@@ -722,7 +735,7 @@ body {
   top: 76.67%;
   bottom: 62.22%;
   width: 51.5%;
-  border: 1px solid #D8D8D8;
+  border-top: 1px solid #D8D8D8;
 }
 
 .siga-em {
@@ -1145,7 +1158,7 @@ body {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 14px;
     display: inline-block;
     text-transform: uppercase;
@@ -1155,7 +1168,7 @@ body {
   }
 
   .titulo-repercusao {
-    font-size: 36px;
+    font-size: 38px;
     line-height: 40px;
     position: absolute;
     height: 80px;
@@ -1198,7 +1211,7 @@ body {
     position: relative;
     width: 63px;
     height: 22px;
-    left: 14.5%;
+    left: 17.5%;
     top: 0px;
 
     font-family: 'Roboto';
@@ -1215,11 +1228,11 @@ body {
 
   .ad-img {
     position: absolute;
-    left: 14.49%;
+    left: 17.49%;
     right: 14.49%;
     top: 8.09%;
     bottom: 0%;
-    width: 67%;
+    width: 70%;
   }
 
   /* Autor */
@@ -1230,21 +1243,36 @@ body {
     flex-direction: row;
     width: 60%;
     height: 80px;
-    left: 105px;
+    left: 10%;
     top: 107px;
+  }
+
+  .compartilhe-colunista {
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    left: 40%;
+    bottom: 47.5%;
+    /* identical to box height, or 183% */
+
+
+    color: #363636;
   }
 
   .social-networks {
     position: relative;
-    left: 100%;
-    bottom: 50%;
+
+    bottom: 70%;
 
   }
 
   .google-news {
     position: relative;
-    top: -74%;
-    left: 150%;
+    top: -96%;
+    left: 180%;
     width: 155px;
     height: 30px;
 
@@ -1278,10 +1306,10 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 310px;
+    width: 21.5%;
     bottom: 20%;
-    left: 65%;
-    top: 480px;
+    left: 72%;
+    top: 460px;
 
   }
 
@@ -1360,5 +1388,390 @@ body {
     left: 2%;
     color: #004071;
     margin-top: 20px;
+  }
+
+  .artigo-section {
+    position: relative;
+    width: 60%;
+    height: 3039px;
+    right: 2%;
+    top: -1420px;
+
+
+  }
+
+  .artigo-img {
+    position: relative;
+    width: 100%;
+    height: 150%;
+    bottom: 500px;
+  }
+
+  .legenda-completa {
+    position: relative;
+    left: 19.5%;
+    top: 30px;
+  }
+
+  .legenda-img {
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    bottom: 60px;
+    left: 7%;
+    color: #191919;
+  }
+
+  .fonte-src {
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 183%;
+    top: -100px;
+    left: 7%;
+
+
+
+    color: #777777;
+  }
+
+  .camera {
+    position: relative;
+    top: -22px;
+    left: 2%;
+  }
+
+  .text-to-speech {
+    position: relative;
+    width: 94%;
+    height: 50px;
+    left: 22%;
+    top: -50px;
+
+
+  }
+
+  .corpo-artigo {
+    display: block;
+    position: relative;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 200%;
+    width: 94%;
+    left: 22%;
+    top: 37.5%;
+    /* or 200% */
+
+
+    color: #333333;
+  }
+
+  .audio-exemple-standing {
+    position: relative;
+    height: 50px;
+    left: 20%;
+  }
+
+
+  /* Leia Mais */
+
+  .leia-mais-section {
+    position: relative;
+    width: 60%;
+    height: 294px;
+    left: 10%;
+    top: -2900px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .leia-mais-titulo {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    text-transform: uppercase;
+    border-top: 2px solid #D1D1D1;
+    width: 29%;
+    padding-top: 20px;
+    top: -70px;
+    color: #191919;
+  }
+
+  .artigo-card {
+    position: relative;
+    top: 0%;
+    height: fit-content;
+    margin-top: 20px;
+    left: 3%;
+
+    ;
+  }
+
+  .artigo-card:nth-child(2) {
+    top: 0%;
+    position: relative;
+    height: fit-content;
+    margin-top: 20px;
+  }
+
+  .artigo-card:nth-child(3) {
+    top: 0%;
+    left: 3.8%;
+    height: fit-content;
+    margin-top: 20px;
+    position: relative;
+    width: 50%;
+
+
+  }
+
+
+  .card-img {
+    width: auto;
+    height: auto;
+    position: relative;
+    border-radius: 2px;
+  }
+
+  .card-titulo {
+    display: block;
+    font-family: 'Merriweather';
+    font-style: normal;
+    width: 80%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 157%;
+    position: relative;
+    color: #004071;
+    left: 0;
+  }
+
+  .card-data {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    top: 135px;
+    width: 100%;
+    left: 0%;
+    color: #666666;
+  }
+
+  .leia-rectangle-bottom {
+    position: absolute;
+    left: 0%;
+    right: 69.32%;
+    top: 95.32%;
+    bottom: 0%;
+
+    border: 1px solid #D1D1D1;
+  }
+
+  .repercusao-box {
+    position: relative;
+    width: 57%;
+    height: fit-content;
+    left: 10.5%;
+    top: -2900px;
+
+  }
+
+  .repercusao-titulo .corrida-titulo {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 143%;
+
+    color: #333333;
+
+  }
+
+  .corrida-box {
+    position: relative;
+    width: 57%;
+    height: fit-content;
+    left: 10.5%;
+    top: -2640px;
+  }
+
+  .continucação-paragrafo {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 200%;
+    color: #333333;
+  }
+
+  .corrida-box .continucação-paragrafo:last-of-type {
+    top: 120px;
+    position: relative;
+  }
+
+  .advertise-bottom-page {
+    position: relative;
+    top: -2880px;
+    left: 17%;
+    width: fit-content;
+  }
+
+
+  .continue-bem-informado {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: relative;
+    top: -2860px;
+    left: 27.5%;
+    align-items: center;
+
+
+  }
+
+  .continue-rectangle {
+    border: 1px solid #D8D8D8;
+    width: 50%;
+    margin: 15px 0;
+  }
+
+  .continue-text {
+
+
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 23px;
+
+    text-align: center;
+
+    color: #191919;
+  }
+
+  .continue-e-assine a {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: #004071;
+
+  }
+
+  .continue-e-assine {
+    top: calc(50% - 16px/2 + 21.5px);
+  }
+
+  .bottom-section {
+    width: 80%;
+    position: relative;
+
+    top: -2500px;
+    bottom: 0;
+  }
+
+  .fique-informado {
+    position: relative;
+    top: -50px;
+    left: 20%;
+    align-items: center;
+  }
+
+  .newsletter-box {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 70%;
+    left: 13%;
+
+  }
+
+  .comece {
+    left: 2%;
+    top: 17%;
+  }
+
+
+  .comentarios {
+
+    height: 54px;
+    bottom: 0;
+    top: -2500px;
+    left: 40%;
+    padding-bottom: 100px;
+    position: relative;
+    width: 60%;
+  }
+
+  .comment-btn {
+    position: relative;
+  }
+
+  .para-comentar {
+    left: -30px;
+    top: 50px;
+  }
+
+  .fique-informado {
+    position: relative;
+    left: 35%;
+  }
+
+  .fique-sempre {
+    top: -30px;
+    font-size: 22px;
+  }
+
+  .rectangle {
+    position: relative;
+    left: 2%;
+    width: 50%;
+    top: 15%;
+  }
+
+  .google-bottom {
+    left: 25%;
+    top: 60px;
+  }
+
+  .siga-em {
+    left: 22%;
+    top: 35%;
+  }
+
+  .envie-email {
+    width: 75%;
+  }
+
+  .btn-send {
+    position: relative;
+    left: 82%;
+  }
+
+  .social-bottom {
+    position: relative;
+    bottom: 0;
+    top: 60px;
+    left: 25%;
+  }
+
+  .networks-bottom {
+
+    bottom: 0;
   }
 }

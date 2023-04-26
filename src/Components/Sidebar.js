@@ -5,11 +5,13 @@ import { maisLidas } from "./maislidas";
 function Sidebar() {
   return (
     <div className="sidebar-box">
-      <Advertise
-        size="xp-top"
-        alt="XP dinheiro investimento"
-        src="imagens/xp-top.png"
-      />
+      <a href="https://www.xpi.com.br/" rel="noreferrer" target="_blank">
+        <Advertise
+          size="xp-top"
+          alt="XP dinheiro investimento"
+          src="imagens/xp-top.png"
+        />
+      </a>
       <hr className="ml-rectangle"></hr>
       <div className="mais-lidas">
         <span className="ml-heading">MAIS LIDAS</span>
@@ -28,12 +30,14 @@ function Sidebar() {
         })}
       </div>
       <span className="publicidade-side-title">Publicidade</span>
-      <Advertise
-        position="xp-bottom"
-        size="xp-bottom"
-        alt="XP dinheiro investimento"
-        src="imagens/xp-bottom.png"
-      />
+      <a href="https://www.xpi.com.br/" rel="noreferrer" target="_blank">
+        <Advertise
+          position="xp-bottom"
+          size="xp-bottom"
+          alt="XP dinheiro investimento"
+          src="imagens/xp-bottom.png"
+        />
+      </a>
     </div>
   );
 }

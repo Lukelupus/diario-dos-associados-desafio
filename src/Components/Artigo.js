@@ -2,11 +2,11 @@ import React from "react";
 import { useMediaQuery } from "react-responsive";
 
 const Mobile = ({ children }) => {
-  const isMobile = useMediaQuery({ maxWidth: 991 });
+  const isMobile = useMediaQuery({ maxWidth: 782 });
   return isMobile ? children : null;
 };
 const Desktop = ({ children }) => {
-  const isDesktop = useMediaQuery({ minWidth: 992 });
+  const isDesktop = useMediaQuery({ minWidth: 782 });
   return isDesktop ? children : null;
 };
 

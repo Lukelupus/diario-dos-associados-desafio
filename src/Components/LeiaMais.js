@@ -3,7 +3,7 @@ import { artigosMobile, artigosDesktop } from "./artigos";
 import { useMediaQuery } from "react-responsive";
 
 const Mobile = ({ children }) => {
-  const isMobile = useMediaQuery({ maxWidth: 991 });
+  const isMobile = useMediaQuery({ maxWidth: 782 });
   return isMobile ? children : null;
 };
 const Desktop = ({ children }) => {
@@ -14,9 +14,9 @@ const Desktop = ({ children }) => {
 function LeiaMais() {
   return (
     <section className="leia-mais-section">
-      <h3 className="leia-mais-titulo">LEIA MAIS</h3>
-
       <Mobile>
+        <h3 className="leia-mais-titulo">LEIA MAIS</h3>
+
         {artigosMobile.map((e, index) => {
           return (
             <div key={index} className="artigo-card">
@@ -28,6 +28,8 @@ function LeiaMais() {
         })}
       </Mobile>
       <Desktop>
+        <h3 className="leia-mais-titulo">LEIA MAIS</h3>
+
         {artigosDesktop.map((e, index) => {
           return (
             <div key={index} className="artigo-card">

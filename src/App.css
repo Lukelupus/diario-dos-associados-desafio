@@ -18,6 +18,8 @@ body {
   background-color: var(--bg-primary);
   padding: 1em;
   height: fit-content;
+  display: flex;
+  flex: 1;
 }
 
 button {
@@ -57,6 +59,7 @@ button {
 }
 
 .btn-assine {
+
   background-color: #F7941D;
   color: var(--bg-primary);
   font-family: 'Roboto Regular';
@@ -85,9 +88,14 @@ button {
 .navbar-nav {
   display: flex;
   position: absolute;
+  width: 100%;
   bottom: 0;
   top: 1px;
   flex-direction: row;
+}
+
+.compartilhe-colunista {
+  display: none;
 }
 
 .nav-item {
@@ -96,6 +104,7 @@ button {
   display: flex;
 
 }
+
 
 
 .logo-container {
@@ -168,7 +177,7 @@ button {
 
 .page-title {
   position: absolute;
-  width: 20em;
+  width: 90%;
   height: 220px;
   left: 10px;
   top: 140px;
@@ -195,6 +204,7 @@ button {
 
   position: absolute;
   height: 120px;
+  width: fit-content;
   left: 0%;
   right: 0%;
   top: calc(50% - 120px/2 - 31px);
@@ -211,15 +221,16 @@ button {
 .subtitulo-repercusao {
   position: absolute;
   height: 31px;
+
   left: 0%;
   right: 0%;
-  top: calc(60% - 31px/2 + 60px);
+  top: calc(55% - 31px/2 + 60px);
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 21px;
-  width: 19em;
+  width: 90%;
 
   color: #333333;
 }
@@ -311,6 +322,7 @@ button {
   height: 30px;
   right: 100%;
 
+
 }
 
 .social-box {
@@ -341,7 +353,8 @@ button {
   height: 30px;
   position: absolute;
   left: 10%;
-
+  cursor: pointer;
+  z-index: 1;
 }
 
 .whatsapp {
@@ -434,15 +447,17 @@ button {
   position: absolute;
   width: 95%;
   height: 256px;
-  left: 9.66px;
+  left: 2%;
   top: 562px;
+  align-items: center;
 }
 
 .artigo-img {
   position: absolute;
-  width: 350px;
-  height: 199px;
-  left: calc(40% - 300px/2);
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  left: 0%;
   top: 0px;
   border-radius: 0.606673px;
 }
@@ -507,7 +522,7 @@ button {
 
 .corpo-artigo {
   position: absolute;
-  width: 336px;
+  width: 90%;
   height: 646px;
   left: 10px;
   top: 936px;
@@ -529,7 +544,7 @@ button {
 .leia-mais-section {
 
   position: absolute;
-  width: 333px;
+  width: 90%;
   height: 388px;
   left: 10px;
   top: 1842px;
@@ -539,12 +554,12 @@ button {
 
 .leia-mais-titulo {
 
-  position: absolute;
+  position: relative;
   height: 25px;
   left: 2%;
   right: 64.78%;
   top: calc(45% - 25px/2 - 166.5px);
-
+  width: 100%;
   font-family: 'Merriweather';
   font-style: normal;
   font-weight: 400;
@@ -632,7 +647,7 @@ button {
 
 .repercusao-box {
   position: absolute;
-  width: 300px;
+  width: 90%;
   height: 626px;
   left: 20px;
   top: 2229px;
@@ -640,7 +655,7 @@ button {
   font-family: 'Merriweather';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 21.5px;
   line-height: 212%;
   /* or 212% */
 
@@ -650,14 +665,14 @@ button {
 
 .corrida-box {
   position: absolute;
-  width: 300px;
+  width: 90%;
   height: 626px;
   left: 20px;
-  top: 3359px;
+  top: 3399px;
   font-family: 'Merriweather';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 21.5px;
   line-height: 212%;
   /* or 212% */
 
@@ -690,10 +705,10 @@ button {
 
 .advertise-bottom-page {
 
-  position: absolute;
-  width: 300px;
+  position: relative;
+  width: 90%;
   height: 250px;
-  left: 20px;
+  left: 5%;
   top: 3105px;
 }
 
@@ -705,7 +720,7 @@ button {
   width: 302px;
   height: 90px;
   left: 24px;
-  top: 4472px;
+  top: 4592px;
 }
 
 .fique-sempre {
@@ -767,7 +782,7 @@ button {
   height: 111px;
   padding-bottom: 15px;
   left: 0px;
-  top: 4642px;
+  top: 4762px;
   background-color: #F7F7F7;
   border-top: 1px solid #D8D8D8;
   border-bottom: 1px solid #D8D8D8;
@@ -854,7 +869,7 @@ button {
   width: 184px;
   height: 30px;
   left: 85px;
-  top: 4793px;
+  top: 4903px;
 }
 
 .compartilhe {
@@ -885,8 +900,8 @@ button {
   width: 268px;
   height: 54px;
   left: 70px;
-  top: 4842px;
-  padding-bottom: 100px;
+  top: 4952px;
+  padding-bottom: 70px;
 }
 
 .comment-btn {
@@ -915,7 +930,7 @@ button {
   height: 14px;
   left: -15%;
   width: 330px;
-  top: calc(23% - 14px/2 + 20px);
+  top: calc(35% - 14px/2 + 20px);
 
   font-family: 'Roboto';
   font-style: normal;
@@ -938,7 +953,7 @@ button {
 
 /* Desktop 992px */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 782px) {
   .nav-box {
     width: 100%;
 
@@ -994,6 +1009,23 @@ button {
     box-sizing: border-box;
     align-items: center;
 
+  }
+
+  .search-page {
+    position: relative;
+    height: 40px;
+    left: 90%;
+    top: -55%;
+    background: #FAFAFA;
+    border: 1px solid rgba(217, 217, 217, 0.498039);
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-left: none;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
   }
 
   .topico {
@@ -1054,6 +1086,10 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .tablet {
+    right: -150px;
   }
 
   .icon-circle {
@@ -1248,13 +1284,14 @@ button {
   }
 
   .compartilhe-colunista {
+    display: block;
     position: relative;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 22px;
-    left: 40%;
+    left: 20%;
     bottom: 47.5%;
     /* identical to box height, or 183% */
 
@@ -1264,7 +1301,7 @@ button {
 
   .social-networks {
     position: relative;
-
+    left: 100%;
     bottom: 70%;
 
   }
@@ -1279,6 +1316,7 @@ button {
   }
 
   .siga-google {
+    position: relative;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -1405,6 +1443,7 @@ button {
     width: 100%;
     height: 150%;
     bottom: 500px;
+    left: 20%;
   }
 
   .legenda-completa {
@@ -1486,7 +1525,7 @@ button {
     position: relative;
     width: 60%;
     height: 294px;
-    left: 10%;
+
     top: -2900px;
     border: none;
     display: flex;
@@ -1504,6 +1543,7 @@ button {
     width: 29%;
     padding-top: 20px;
     top: -70px;
+    left: 17%;
     color: #191919;
   }
 
@@ -1570,7 +1610,7 @@ button {
 
   .leia-rectangle-bottom {
     position: absolute;
-    left: 0%;
+    left: 16%;
     right: 69.32%;
     top: 95.32%;
     bottom: 0%;
@@ -1720,6 +1760,8 @@ button {
 
   .comment-btn {
     position: relative;
+    width: 27%;
+    left: 1%;
   }
 
   .para-comentar {
@@ -1766,12 +1808,13 @@ button {
   .social-bottom {
     position: relative;
     bottom: 0;
-    top: 60px;
+    top: 30px;
     left: 25%;
   }
 
   .networks-bottom {
-
+    left: 60%;
     bottom: 0;
   }
+
 }

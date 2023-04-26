@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState } from "react";
 import Navbar from "./Components/Navbar";
 import Publicidade from "./Components/Publicidade";
 import Titulo from "./Components/Titulo";
@@ -20,15 +21,31 @@ const Mobile = ({ children }) => {
   const isMobile = useMediaQuery({ maxWidth: 991 });
   return isMobile ? children : null;
 };
+const Tablet = ({ children }) => {
+  const isTablet = useMediaQuery({ minWidth: 1260 });
+  return isTablet ? children : null;
+};
 const Desktop = ({ children }) => {
   const isDesktop = useMediaQuery({ minWidth: 992 });
   return isDesktop ? children : null;
 };
 
 function App() {
+  const [open, setOpen] = useState(false);
+  function openSearch() {
+    setOpen(true);
+  }
+
+  function closeSearch() {
+    if (open === true) {
+      console.log("aqui");
+      console.log(open);
+      setOpen(false);
+    }
+  }
   return (
-    <div className="App">
-      <Navbar />
+    <div onClick={closeSearch} className="App">
+      <Navbar search={openSearch} open={open} />
       <Publicidade anuncios={anunciosTopPage} />
       <Titulo />
       <Colunista
@@ -66,7 +83,10 @@ function App() {
         subtitulo="Corrida Pelo Oscar"
         texto={corridaPeloOscar}
       />
-      <ContinueBemInformadoModal />
+      <Tablet>
+        <ContinueBemInformadoModal />
+      </Tablet>
+
       <Bottom />
       <Comentarios />
     </div>

@@ -146,7 +146,7 @@ button {
 /* Publicidade */
 .ad-section {
   position: relative;
-  width: 23em;
+  width: 90vw;
   height: 70px;
   left: 0px;
   top: 2%;
@@ -532,7 +532,7 @@ button {
 
 .corpo-artigo {
   position: absolute;
-  width: 90%;
+  width: 95%;
   height: 646px;
   left: 10px;
   top: calc((100vw + 1502px)/2);
@@ -540,7 +540,7 @@ button {
   font-family: 'Merriweather';
   font-style: normal;
   font-weight: 400;
-  font-size: 21.75px;
+  font-size: 20.75px;
   line-height: 212%;
   /* or 212% */
 
@@ -640,7 +640,7 @@ button {
   height: 54px;
   left: 110px;
   top: 22px;
-
+  cursor: pointer;
   font-family: 'Merriweather';
   font-style: normal;
   font-weight: 400;
@@ -715,12 +715,18 @@ button {
 /* Ad Bottom */
 
 .advertise-bottom-page {
-
+  display: block;
   position: relative;
   width: 90%;
   height: 250px;
   left: 5%;
-  top: 3105px;
+  top: calc((100vh + 5550px)/2);
+}
+
+.advertise-image {
+  width: fit-content;
+  height: 80%;
+  cursor: pointer;
 }
 
 /* Bottom */
@@ -803,7 +809,7 @@ button {
 
 .newsletter-box {
   position: absolute;
-  width: 100vw;
+  width: 90vw;
   height: 111px;
   padding-bottom: 15px;
   left: 0px;
@@ -1290,6 +1296,7 @@ button {
 
   .ad-img {
     position: absolute;
+    height: 90%;
     left: 17.49%;
     right: 14.49%;
     top: 8.09%;
@@ -1306,7 +1313,7 @@ button {
     width: 60%;
     height: 80px;
     left: 10%;
-    top: -420px;
+    top: -410px;
   }
 
   .compartilhe-colunista {
@@ -1454,6 +1461,10 @@ button {
     margin-top: 20px;
   }
 
+  .img-box {
+    left: 7%;
+  }
+
   .artigo-section {
     position: relative;
     width: 60%;
@@ -1530,7 +1541,7 @@ button {
     font-size: 22px;
     line-height: 200%;
     width: 94%;
-    left: 22%;
+    left: 27%;
     top: 37.5%;
 
 
@@ -1608,6 +1619,7 @@ button {
     height: auto;
     position: relative;
     border-radius: 2px;
+    cursor: pointer;
   }
 
   .card-titulo {
@@ -1846,4 +1858,8 @@ button {
     bottom: 0;
   }
 
+  .advertise-image {
+    width: fit-content;
+    height: auto;
+  }
 }

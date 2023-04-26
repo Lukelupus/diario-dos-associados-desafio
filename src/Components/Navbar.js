@@ -41,7 +41,7 @@ function Navbar(props) {
                         <img
                           className="title"
                           alt="Estado de Minas"
-                          src="diario-dos-associados-desafio/imagens/jornal-estado-de-minas-logo.png"
+                          src="imagens/jornal-estado-de-minas-logo.png"
                         ></img>
                       </a>
                     </li>
@@ -69,14 +69,14 @@ function Navbar(props) {
 
                           <img
                             className="logged-user"
-                            src="diario-dos-associados-desafio/imagens/logged-user.png"
+                            src="imagens/logged-user.png"
                             alt="usuario"
                           ></img>
                         </div>
                         <div className="search" onClick={search}>
                           <img
                             className="search-icon"
-                            src="diario-dos-associados-desafio/imagens/search-icon.png"
+                            src="imagens/search-icon.png"
                             alt="search"
                           ></img>
                           {open && (
@@ -92,7 +92,7 @@ function Navbar(props) {
                           </span>
                           <img
                             className="arrow"
-                            src="diario-dos-associados-desafio/imagens/arrow.png"
+                            src="imagens/arrow.png"
                             alt="arrow"
                           ></img>
                           <span className="crumbs">

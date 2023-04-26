@@ -8,7 +8,7 @@ function Sidebar() {
       <Advertise
         size="xp-top"
         alt="XP dinheiro investimento"
-        src="diario-dos-associados-desafio/imagens/xp-top.png"
+        src="imagens/xp-top.png"
       />
       <hr className="ml-rectangle"></hr>
       <div className="mais-lidas">
@@ -18,10 +18,7 @@ function Sidebar() {
             <div key={index} className="noticia-box">
               <p className="mais-lidas-data">{e.data}</p>
               {e.coroa ? (
-                <img
-                  src="diario-dos-associados-desafio/imagens/ico-premium.png"
-                  alt="premium"
-                ></img>
+                <img src="imagens/ico-premium.png" alt="premium"></img>
               ) : null}
               <span key={index} className="mais-lidas-titulo">
                 {e.titulo}
@@ -35,7 +32,7 @@ function Sidebar() {
         position="xp-bottom"
         size="xp-bottom"
         alt="XP dinheiro investimento"
-        src="diario-dos-associados-desafio/imagens/xp-bottom.png"
+        src="imagens/xp-bottom.png"
       />
     </div>
   );

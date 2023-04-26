@@ -9,11 +9,7 @@ function Colunista(props) {
           <p className="colunista-text">Colunista</p>
         </div>
         <p className="author-name">{props.name}</p>
-        <img
-          className="fav-clock"
-          src="diario-dos-associados-desafio/imagens/Clock.png"
-          alt="clock"
-        ></img>
+        <img className="fav-clock" src="imagens/Clock.png" alt="clock"></img>
         <p className="coluna-time">02/02/2021 08:22</p>
       </div>
       <div className="social-box">
@@ -67,7 +63,7 @@ function Colunista(props) {
             SIGA NO{" "}
             <img
               className="google-img"
-              src="diario-dos-associados-desafio/imagens/google-news.png"
+              src="imagens/google-news.png"
               alt="Estado de Minas Google News"
             ></img>
           </a>

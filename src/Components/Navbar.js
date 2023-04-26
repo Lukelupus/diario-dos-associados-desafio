@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
 const Mobile = ({ children }) => {
@@ -37,11 +37,13 @@ function Navbar(props) {
                 <div className={login ? "nav-menu" : "nav-menu active"}>
                   <ul className="navbar-nav">
                     <li className="nav-item active">
-                      <img
-                        className="title"
-                        alt="Estado de Minas"
-                        src="imagens/jornal-estado-de-minas-logo.png"
-                      ></img>
+                      <a href="/">
+                        <img
+                          className="title"
+                          alt="Estado de Minas"
+                          src="diario-dos-associados-desafio/imagens/jornal-estado-de-minas-logo.png"
+                        ></img>
+                      </a>
                     </li>
                     <li className="nav-item active">
                       <Desktop>
@@ -67,14 +69,14 @@ function Navbar(props) {
 
                           <img
                             className="logged-user"
-                            src="imagens/logged-user.png"
+                            src="diario-dos-associados-desafio/imagens/logged-user.png"
                             alt="usuario"
                           ></img>
                         </div>
                         <div className="search" onClick={search}>
                           <img
                             className="search-icon"
-                            src="imagens/search-icon.png"
+                            src="diario-dos-associados-desafio/imagens/search-icon.png"
                             alt="search"
                           ></img>
                           {open && (
@@ -90,7 +92,7 @@ function Navbar(props) {
                           </span>
                           <img
                             className="arrow"
-                            src="imagens/arrow.png"
+                            src="diario-dos-associados-desafio/imagens/arrow.png"
                             alt="arrow"
                           ></img>
                           <span className="crumbs">

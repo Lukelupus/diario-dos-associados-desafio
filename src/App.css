@@ -56,6 +56,7 @@ button {
 .title {
   height: 3.25em;
   z-index: -99;
+  cursor: pointer;
 }
 
 .btn-assine {
@@ -144,11 +145,11 @@ button {
 
 /* Publicidade */
 .ad-section {
-  position: absolute;
+  position: relative;
   width: 23em;
   height: 70px;
   left: 0px;
-  top: 75px;
+  top: 2%;
 }
 
 .publicidade {
@@ -242,7 +243,8 @@ button {
   width: 221px;
   height: 80px;
   left: 10px;
-  top: 430px;
+  top: calc((100vw + 482px)/2);
+  ;
 }
 
 .colunista-btn {
@@ -321,6 +323,7 @@ button {
   width: 110px;
   height: 30px;
   right: 100%;
+  /* top: calc((100vw - 380px)/2); */
 
 
 }
@@ -330,7 +333,7 @@ button {
 
   height: 120px;
   left: 42.5%;
-  top: 520px;
+  top: calc((100vw + 690px)/2);
 }
 
 .google-news {
@@ -452,6 +455,12 @@ button {
   align-items: center;
 }
 
+.artigo-section {
+  position: relative;
+  left: -5%;
+  top: calc((100vw - 420px)*2);
+}
+
 .artigo-img {
   position: absolute;
   align-items: center;
@@ -507,10 +516,11 @@ button {
 }
 
 .text-to-speech {
-  position: absolute;
-  width: 333px;
-  height: 50px;
-  top: 310px;
+  position: relative;
+  width: 90%;
+  height: 45px;
+  top: 320px;
+  left: 3%;
   background: #FFFFFF;
   box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.3);
   border-radius: 6px;
@@ -525,7 +535,7 @@ button {
   width: 90%;
   height: 646px;
   left: 10px;
-  top: 936px;
+  top: calc((100vw + 1502px)/2);
 
   font-family: 'Merriweather';
   font-style: normal;
@@ -544,10 +554,11 @@ button {
 .leia-mais-section {
 
   position: absolute;
+  display: block;
   width: 90%;
   height: 388px;
   left: 10px;
-  top: 1842px;
+  top: calc((100vw + 3482px)/2);
   border-top: 2px solid #D1D1D1;
   border-bottom: 2px solid #D1D1D1;
 }
@@ -650,7 +661,7 @@ button {
   width: 90%;
   height: 626px;
   left: 20px;
-  top: 2229px;
+  top: calc((100vw + 4230px)/2);
 
   font-family: 'Merriweather';
   font-style: normal;
@@ -668,7 +679,7 @@ button {
   width: 90%;
   height: 626px;
   left: 20px;
-  top: 3399px;
+  top: calc((100vw + 6630px)/2);
   font-family: 'Merriweather';
   font-style: normal;
   font-weight: 400;
@@ -714,6 +725,15 @@ button {
 
 /* Bottom */
 
+.bottom-section {
+
+  position: relative;
+  width: 100%;
+  left: -5%;
+  top: calc((100vw - 520px)*2);
+
+}
+
 .fique-informado {
 
   position: absolute;
@@ -726,14 +746,18 @@ button {
 .fique-sempre {
   position: absolute;
   height: 23px;
-  left: 5%;
+  left: -35px;
   right: 0%;
-  top: calc(90% - 23px/2 - 33.5px);
+  top: calc(90% - 23px/2 - 22.5px);
+  display: block;
+  text-align: center;
+  width: 100vw;
+
 
   font-family: 'Merriweather';
   font-style: normal;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 21px;
   line-height: 23px;
 
 
@@ -744,10 +768,11 @@ button {
 
 
 .rectangle {
+
   position: absolute;
   left: 26.43%;
-  right: 22.43%;
-  top: 76.67%;
+  right: 24.43%;
+  top: 80.67%;
   bottom: 62.22%;
   width: 51.5%;
   border-top: 1px solid #D8D8D8;
@@ -756,7 +781,7 @@ button {
 .siga-em {
   position: absolute;
   height: 16px;
-  left: 14.71%;
+  left: 60px;
   right: 14.34%;
   top: calc(107% - 16px/2 + 7px);
   font-family: 'Roboto';
@@ -772,13 +797,13 @@ button {
 }
 
 .google-bottom {
-  left: 30%;
+  left: 85px;
   top: 135%
 }
 
 .newsletter-box {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 111px;
   padding-bottom: 15px;
   left: 0px;
@@ -896,11 +921,12 @@ button {
 /* Comentários */
 
 .comentarios {
-  position: absolute;
+  position: relative;
   width: 268px;
   height: 54px;
-  left: 70px;
-  top: 4952px;
+  left: 15%;
+  bottom: 0;
+  top: calc((100vw + 2000px)*2);
   padding-bottom: 70px;
 }
 
@@ -1280,7 +1306,7 @@ button {
     width: 60%;
     height: 80px;
     left: 10%;
-    top: 107px;
+    top: -420px;
   }
 
   .compartilhe-colunista {
@@ -1506,7 +1532,7 @@ button {
     width: 94%;
     left: 22%;
     top: 37.5%;
-    /* or 200% */
+
 
 
     color: #333333;
@@ -1515,7 +1541,8 @@ button {
   .audio-exemple-standing {
     position: relative;
     height: 50px;
-    left: 20%;
+    top: 5%;
+    width: 100%;
   }
 
 
@@ -1736,7 +1763,7 @@ button {
     position: relative;
     top: 0;
     bottom: 0;
-    width: 70%;
+    width: 80%;
     left: 13%;
 
   }
@@ -1777,6 +1804,8 @@ button {
   .fique-sempre {
     top: -30px;
     font-size: 22px;
+    left: 5%;
+    width: 100%;
   }
 
   .rectangle {

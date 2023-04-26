@@ -49,7 +49,7 @@ function App() {
       <Publicidade anuncios={anunciosTopPage} />
       <Titulo />
       <Colunista
-        author="imagens/tamaki-ryushi-mobile.png"
+        author="diario-dos-associados-desafio/imagens/tamaki-ryushi-mobile.png"
         name="Tamaki Ryushi"
       />
       <Sidebar />
@@ -65,7 +65,7 @@ function App() {
         <Advertise
           position="advertise-bottom-page"
           size="advertise-image"
-          src="imagens/wemobi.png"
+          src="diario-dos-associados-desafio/imagens/wemobi.png"
           alt="We Mobi Viagem"
         />
       </Mobile>
@@ -73,7 +73,7 @@ function App() {
         <Advertise
           position="advertise-bottom-page"
           size="advertise-image"
-          src="imagens/reserva-moda.png"
+          src="diario-dos-associados-desafio/imagens/reserva-moda.png"
           alt="Reserva Moda Camisa"
         />
       </Desktop>

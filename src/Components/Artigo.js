@@ -41,7 +41,7 @@ function Artigo() {
             controls
             className="audio"
             src="audio-referente-ao-artigo.mp3"
-            type="audio/mp3"
+            type="audio/mp3 "
           ></audio> */}
           <Mobile>
             <img

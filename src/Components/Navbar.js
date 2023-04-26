@@ -41,7 +41,7 @@ function Navbar(props) {
                         <img
                           className="title"
                           alt="Estado de Minas"
-                          src="imagens/jornal-estado-de-minas-logo.png"
+                          src="diario-dos-associados-desafio/imagens/jornal-estado-de-minas-logo.png"
                         ></img>
                       </a>
                     </li>

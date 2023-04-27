@@ -1,19 +1,16 @@
 {
   "files": {
-    "main.css": "/diario-dos-associados-desafio/static/css/main.5d41b5b1.css",
-    "main.js": "/diario-dos-associados-desafio/static/js/main.a6d0fe06.js",
+    "main.css": "/diario-dos-associados-desafio/static/css/main.e26c7fb4.css",
+    "main.js": "/diario-dos-associados-desafio/static/js/main.b462c7d8.js",
     "static/js/787.dfa89f15.chunk.js": "/diario-dos-associados-desafio/static/js/787.dfa89f15.chunk.js",
     "static/media/Roboto-Regular_0.ttf": "/diario-dos-associados-desafio/static/media/Roboto-Regular_0.d08b3cc873089fdba7fb.ttf",
     "static/media/Roboto-Light_0.ttf": "/diario-dos-associados-desafio/static/media/Roboto-Light_0.00fc594b8a514c3f772a.ttf",
     "static/media/ps.ttf": "/diario-dos-associados-desafio/static/media/ps.d5d674e74929a4716cba.ttf",
     "static/media/HelveticaUltraLt_0.ttf": "/diario-dos-associados-desafio/static/media/HelveticaUltraLt_0.2473d8644ed753100869.ttf",
     "index.html": "/diario-dos-associados-desafio/index.html",
-    "main.5d41b5b1.css.map": "/diario-dos-associados-desafio/static/css/main.5d41b5b1.css.map",
-    "main.a6d0fe06.js.map": "/diario-dos-associados-desafio/static/js/main.a6d0fe06.js.map",
+    "main.e26c7fb4.css.map": "/diario-dos-associados-desafio/static/css/main.e26c7fb4.css.map",
+    "main.b462c7d8.js.map": "/diario-dos-associados-desafio/static/js/main.b462c7d8.js.map",
     "787.dfa89f15.chunk.js.map": "/diario-dos-associados-desafio/static/js/787.dfa89f15.chunk.js.map"
   },
-  "entrypoints": [
-    "static/css/main.5d41b5b1.css",
-    "static/js/main.a6d0fe06.js"
-  ]
+  "entrypoints": ["static/css/main.e26c7fb4.css", "static/js/main.b462c7d8.js"]
 }

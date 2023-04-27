@@ -14,7 +14,7 @@ function Colunista(props) {
           <p className="coluna-time">
             <img
               className="fav-clock"
-              src="diario-dos-associados-desafio/imagens/Clock.png"
+              src="imagens/Clock.png"
               alt="clock"
             ></img>
             02/02/2021 08:22

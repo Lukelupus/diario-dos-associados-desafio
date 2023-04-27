@@ -14,7 +14,7 @@ function Colunista(props) {
           <p className="coluna-time">
             <img
               className="fav-clock"
-              src="diario-dos-associados-desafio/imagens/Clock.png"
+              src="imagens/Clock.png"
               alt="clock"
             ></img>
             02/02/2021 08:22
@@ -72,7 +72,7 @@ function Colunista(props) {
             SIGA NO{" "}
             <img
               className="google-img"
-              src="diario-dos-associados-desafio/imagens/google-news.png"
+              src="imagens/google-news.png"
               alt="Estado de Minas Google News"
             ></img>
           </a>

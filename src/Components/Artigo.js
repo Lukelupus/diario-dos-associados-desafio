@@ -17,23 +17,19 @@ function Artigo() {
         <Mobile>
           <img
             className="artigo-img"
-            src="diario-dos-associados-desafio/imagens/elenco-bacurau-mobile.png"
+            src="imagens/elenco-bacurau-mobile.png"
             alt="Bacurau"
           ></img>
         </Mobile>
         <Desktop>
           <img
             className="artigo-img"
-            src="diario-dos-associados-desafio/imagens/elenco-bacurau-desktop.png"
+            src="imagens/elenco-bacurau-desktop.png"
             alt="Bacurau"
           ></img>
         </Desktop>
         <div className="legenda-completa">
-          <img
-            className="camera"
-            src="diario-dos-associados-desafio/imagens/camera.png"
-            alt="camera"
-          ></img>
+          <img className="camera" src="imagens/camera.png" alt="camera"></img>
           <p className="legenda-img">
             Após dois anos, longa voltou a ser elegível para concorrer ao Oscar
             2021 e causou grande repercussão
@@ -50,14 +46,14 @@ function Artigo() {
           <Mobile>
             <img
               className="audio-exemple-standing"
-              src="diario-dos-associados-desafio/imagens/audio-exemple.png"
+              src="imagens/audio-exemple.png"
               alt="exemplo de audio"
             ></img>
           </Mobile>
           <Desktop>
             <img
               className="audio-exemple-standing"
-              src="diario-dos-associados-desafio/imagens/audio-desktop-corrigido.png"
+              src="imagens/audio-desktop-corrigido.png"
               alt="exemplo de audio"
             ></img>
           </Desktop>

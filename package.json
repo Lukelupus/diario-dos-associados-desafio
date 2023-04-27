@@ -14,7 +14,7 @@
     "react-responsive": "^9.0.2",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "http://Lukelupus.github.io/diario-dos-associados-desafio",
+  "homepage": "http://Lukelupus.github.io/diario-dos-associados-desafio/public/",
   "devDependencies": {
     "gh-pages": "^5.0.0",
     "react-scripts": "5.0.1"

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ContinueBemInformadoModal from "./ContinuaBemInformadoModal";
 import { useMediaQuery } from "react-responsive";
 

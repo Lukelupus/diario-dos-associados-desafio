@@ -2,11 +2,11 @@ import React from "react";
 import { useMediaQuery } from "react-responsive";
 
 const Mobile = ({ children }) => {
-  const isMobile = useMediaQuery({ maxWidth: 782 });
+  const isMobile = useMediaQuery({ maxWidth: 992 });
   return isMobile ? children : null;
 };
 const Desktop = ({ children }) => {
-  const isDesktop = useMediaQuery({ minWidth: 782 });
+  const isDesktop = useMediaQuery({ minWidth: 992 });
   return isDesktop ? children : null;
 };
 
@@ -57,7 +57,7 @@ function Artigo() {
           <Desktop>
             <img
               className="audio-exemple-standing"
-              src="diario-dos-associados-desafio/imagens/audio-desktop.png"
+              src="diario-dos-associados-desafio/imagens/audio-desktop-corrigido.png"
               alt="exemplo de audio"
             ></img>
           </Desktop>

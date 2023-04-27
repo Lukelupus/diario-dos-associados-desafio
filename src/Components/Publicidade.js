@@ -2,11 +2,11 @@ import React from "react";
 import { useMediaQuery } from "react-responsive";
 
 const Desktop = ({ children }) => {
-  const isDesktop = useMediaQuery({ minWidth: 782 });
+  const isDesktop = useMediaQuery({ minWidth: 992 });
   return isDesktop ? children : null;
 };
 const Mobile = ({ children }) => {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isMobile = useMediaQuery({ maxWidth: 992 });
   return isMobile ? children : null;
 };
 function Publicidade(props) {

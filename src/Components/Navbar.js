@@ -2,12 +2,8 @@ import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
 const Mobile = ({ children }) => {
-  const isMobile = useMediaQuery({ maxWidth: 782 });
+  const isMobile = useMediaQuery({ maxWidth: 992 });
   return isMobile ? children : null;
-};
-const Tablet = ({ children }) => {
-  const isTablet = useMediaQuery({ minWidth: 782, maxWidth: 992 });
-  return isTablet ? children : null;
 };
 const Desktop = ({ children }) => {
   const isDesktop = useMediaQuery({ minWidth: 992 });
@@ -34,7 +30,7 @@ function Navbar(props) {
           <div className="navbar-head">
             <div className="nav-container">
               <nav className="navbar">
-                <div className={login ? "nav-menu" : "nav-menu active"}>
+                <div className="nav-menu">
                   <ul className="navbar-nav">
                     <li className="nav-item active">
                       <a href="/">
@@ -102,13 +98,7 @@ function Navbar(props) {
                           </span>
                         </div>
                       </Desktop>
-                      <Tablet>
-                        <div className="right-pull tablet">
-                          <button className="btn btn-assine-desktop">
-                            Assine
-                          </button>
-                        </div>
-                      </Tablet>
+
                       <Mobile>
                         <button className="btn btn-assine">Assine</button>
                       </Mobile>

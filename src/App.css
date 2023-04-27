@@ -16,10 +16,10 @@ body {
   line-height: 1.42857;
   color: var(--text-primary);
   background-color: var(--bg-primary);
-  padding: 1em;
   height: fit-content;
   display: flex;
   flex: 1;
+  flex-direction: column;
 }
 
 button {
@@ -31,18 +31,21 @@ button {
 .nav-box {
   background: rgba(0, 0, 0, 0.0001);
   box-shadow: inset 0px -1px 0px rgba(217, 217, 217, 0.498039), inset 0px 0px 1px 0px rgba(217, 217, 217, 0.498039);
-  height: 30px;
+  height: fit-content;
   z-index: 999;
-  width: 100%;
+
+
 }
 
-.navbar-section {
-  position: absolute;
-  width: fit-content;
-  height: 50px;
-  left: 0px;
-  top: 0px;
 
+
+.nav-menu {
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
 }
 
 .navbar-head {
@@ -53,10 +56,10 @@ button {
 
 }
 
+
 .title {
-  height: 3.25em;
-  z-index: -99;
   cursor: pointer;
+  width: 90%;
 }
 
 .btn-assine {
@@ -78,22 +81,23 @@ button {
 
 .navbar {
   z-index: 1;
-  display: flex;
   background-color: transparent;
-  justify-content: space-around;
-  align-items: center;
   font-size: 14px;
+  width: 100%;
+
 
 }
 
 .navbar-nav {
   display: flex;
-  position: absolute;
+
   width: 100%;
   bottom: 0;
   top: 1px;
   flex-direction: row;
 }
+
+
 
 .compartilhe-colunista {
   display: none;
@@ -117,7 +121,7 @@ button {
   width: 34px;
   height: 34px;
   left: 8px;
-  top: 12.5%;
+
   background-color: #fafafa;
   border: 1px solid #ececec;
   border-radius: 10%;
@@ -131,6 +135,7 @@ button {
   border: 2px solid;
   position: absolute;
   left: 15%;
+
   margin-bottom: 2px;
 }
 
@@ -143,17 +148,16 @@ button {
 }
 
 
+
 /* Publicidade */
-.ad-section {
-  position: relative;
-  width: 90vw;
-  height: 70px;
-  left: 0px;
-  top: 2%;
+
+
+.ad-box {
+  width: 100%;
 }
 
 .publicidade {
-  position: absolute;
+
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -163,30 +167,27 @@ button {
   color: #191919;
   margin: 0;
   bottom: 95%;
-  left: 3%;
+
   z-index: 999;
+
 }
 
 .ad-img {
-  position: absolute;
-  left: 3%;
-  top: 5%;
-  width: 87.5%;
+  width: 95.5vw;
 }
 
 /* Titulo */
 
 .page-title {
-  position: absolute;
+
   width: 90%;
-  height: 220px;
-  left: 10px;
-  top: 140px;
+  height: 280px;
+
 }
 
 .titulo-oscar {
 
-  position: absolute;
+
   height: 14px;
   left: 0%;
   right: 76.67%;
@@ -203,7 +204,7 @@ button {
 
 .titulo-repercusao {
 
-  position: absolute;
+
   height: 120px;
   width: fit-content;
   left: 0%;
@@ -220,7 +221,7 @@ button {
 }
 
 .subtitulo-repercusao {
-  position: absolute;
+
   height: 31px;
 
   left: 0%;
@@ -237,50 +238,58 @@ button {
 }
 
 /* Colunista */
-
-.author-box {
-  position: absolute;
-  width: 221px;
-  height: 80px;
-  left: 10px;
-  top: calc((100vw + 482px)/2);
-  ;
+.colunista-box {
+  width: 80%;
+  margin-left: 10px;
 }
 
+.author {
+  width: 50px;
+  height: 50px;
+}
+
+
+.author-box {
+
+  width: 65%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+
+}
+
+
 .colunista-btn {
-  position: absolute;
-  left: 42.99%;
-  right: 9.95%;
-  top: 0%;
-  bottom: 71.25%;
+
+  display: flex;
+  flex: 1;
+  justify-content: center;
   text-align: center;
   background: #004071;
   border-radius: 4px;
+  height: 25px;
+  align-items: center;
+  width: 105px;
 
 }
 
 .colunista-text {
   height: 14px;
-  left: 19.23%;
-  right: 18.27%;
-  bottom: -25%;
-  position: absolute;
+
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 14px;
+  letter-spacing: 1px;
   text-align: center;
+
 
   color: #FFFFFF;
 }
 
 .author-name {
-  position: absolute;
-  height: 21px;
-  left: 42.99%;
-  right: 3.17%;
-  top: calc(25% - 21px/2 + 2.5px);
 
   font-family: 'Roboto';
   font-style: normal;
@@ -293,58 +302,50 @@ button {
   color: #333333;
 }
 
-.fav-clock {
-  position: absolute;
-  left: 42.99%;
-  right: 46.15%;
-  top: 70%;
-  bottom: 0%;
 
+.fav-clock {
+  position: relative;
+  top: 7px;
+  right: 2px;
 }
 
 .coluna-time {
-  position: absolute;
-  height: 22px;
-  left: 56.11%;
-  right: 0%;
-  top: calc(34% - 22px/2 + 28px);
-  width: 10em;
+  position: relative;
+  bottom: 25%;
+  width: 150px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 12.5px;
   line-height: 22px;
 
   color: #363636;
 }
 
 .social-networks {
-  position: absolute;
+  display: flex;
+  flex-direction: row;
   width: 110px;
   height: 30px;
   right: 100%;
-  /* top: calc((100vw - 380px)/2); */
-
-
+  gap: 10px;
 }
 
 .social-box {
-  position: absolute;
 
-  height: 120px;
-  left: 42.5%;
-  top: calc((100vw + 690px)/2);
+  height: 80px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
 }
 
 .google-news {
-  width: 200px;
-  height: 30px;
-  top: 500px;
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  min-width: 70%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   background: #EAEAEA;
   border-radius: 4px;
 
@@ -354,22 +355,20 @@ button {
 
   width: 30px;
   height: 30px;
-  position: absolute;
-  left: 10%;
   cursor: pointer;
-  z-index: 1;
+
 }
 
 .whatsapp {
   background-color: #1BD741;
   border-radius: 100%;
-  position: absolute;
+
   left: 35%;
 }
 
 .icon {
   fill: #fff;
-  position: absolute;
+  position: relative;
   bottom: 3px;
   left: 3px;
 
@@ -384,14 +383,14 @@ button {
 .twitter {
   border-radius: 100%;
   background-color: #55ACEE;
-  left: 0%;
+
 }
 
 
 .twitter-icon {
   width: 18px;
   height: 18px;
-  bottom: 5px;
+  top: 6px;
   left: 6px;
 }
 
@@ -405,10 +404,11 @@ button {
   height: 70%;
   width: 70%;
   left: 15%;
+  top: 5px;
 }
 
 .whatsapp-icon {
-  position: absolute;
+
   top: 14.5%;
   left: 15%;
   fill: #ececec;
@@ -417,20 +417,16 @@ button {
 }
 
 .siga-google {
-  position: absolute;
+  position: relative;
+  bottom: 35%;
+  left: 5%;
   text-decoration: none;
   height: 14px;
-  right: 73.23%;
-  top: calc(50% - 14px/2 - 0.02px);
-
-
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
-  /* identical to box height */
-
   text-align: center;
   text-transform: uppercase;
 
@@ -438,60 +434,62 @@ button {
 }
 
 .google-img {
-  position: absolute;
-  left: 110%;
-  top: -30%;
+  position: relative;
+  top: 80%;
+
 }
 
 /* Imagem Box */
 
 .img-box {
 
-  position: absolute;
+
   width: 95%;
-  height: 256px;
+
   left: 2%;
   top: 562px;
   align-items: center;
 }
 
 .artigo-section {
-  position: relative;
+
   left: -5%;
   top: calc((100vw - 420px)*2);
 }
 
 .artigo-img {
-  position: absolute;
+
   align-items: center;
-  width: 100%;
+  width: 105%;
   height: 80%;
   left: 0%;
   top: 0px;
   border-radius: 0.606673px;
 }
 
+.legenda-completa {
+
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
 .legenda-img {
-  position: absolute;
+  margin: 0;
   height: 48px;
-  left: 10.22%;
-  right: 0.11%;
-  top: calc(90% - 48px/2 - 12.5px);
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 18px;
   color: #191919;
 }
 
 .fonte-src {
-  position: absolute;
-  height: 22px;
-  left: 10.22%;
-  right: 58.11%;
-  top: calc(92% - 22px/2 + 27.5px);
 
+  height: 22px;
+  width: 80%;
+  margin-left: 12%;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -502,7 +500,7 @@ button {
 }
 
 .camera {
-  position: absolute;
+
   width: 24px;
   height: 20px;
   left: 0.22%;
@@ -516,31 +514,36 @@ button {
 }
 
 .text-to-speech {
-  position: relative;
-  width: 90%;
-  height: 45px;
-  top: 320px;
-  left: 3%;
+
+  width: 104%;
+
   background: #FFFFFF;
   box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.3);
   border-radius: 6px;
+  margin-bottom: 30px;
 }
 
 .audio {
   display: none;
 }
 
+.audio-exemple-standing {
+  position: relative;
+  top: 6px;
+  width: 102%;
+}
+
 .corpo-artigo {
-  position: absolute;
+
   width: 95%;
   height: 646px;
   left: 10px;
   top: calc((100vw + 1502px)/2);
-
+  margin-left: 10px;
   font-family: 'Merriweather';
   font-style: normal;
   font-weight: 400;
-  font-size: 20.75px;
+  font-size: 22px;
   line-height: 212%;
   /* or 212% */
 
@@ -553,14 +556,12 @@ button {
 
 .leia-mais-section {
 
-  position: absolute;
+  margin-top: 20px;
   display: block;
   width: 90%;
-  height: 388px;
-  left: 10px;
-  top: calc((100vw + 3482px)/2);
   border-top: 2px solid #D1D1D1;
   border-bottom: 2px solid #D1D1D1;
+  padding-bottom: 10px;
 }
 
 .leia-mais-titulo {
@@ -582,44 +583,27 @@ button {
 }
 
 .artigo-card {
-
-  position: absolute;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 12px;
+  position: relative;
   left: 2.33%;
   right: 0%;
   top: 70.36%;
   bottom: 3.87%;
+  gap: 1em;
 }
 
-.artigo-card:nth-child(2) {
 
-  position: absolute;
-  left: 2.33%;
-  right: 0%;
-  top: 13.66%;
-  bottom: 60.57%;
-
-}
-
-.artigo-card:nth-child(3) {
-  position: absolute;
-  left: 2.33%;
-  right: 0%;
-  top: 42.01%;
-  bottom: 32.22%;
-
-}
 
 .card-img {
-  position: absolute;
   width: 100px;
   height: 100px;
-  left: 0px;
-  top: calc(50% - 100px/2);
   border-radius: 2px;
 }
 
 .card-data {
-  position: absolute;
+
   height: 16px;
   left: 32.6%;
   right: 23.95%;
@@ -635,16 +619,14 @@ button {
 }
 
 .card-titulo {
-  position: absolute;
+
   width: 179px;
   height: 54px;
-  left: 110px;
-  top: 22px;
   cursor: pointer;
   font-family: 'Merriweather';
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 17px;
   line-height: 22px;
 
   color: #004071;
@@ -657,35 +639,27 @@ button {
 
 
 .repercusao-box {
-  position: absolute;
-  width: 90%;
-  height: 626px;
-  left: 20px;
-  top: calc((100vw + 4230px)/2);
 
+  width: 90%;
   font-family: 'Merriweather';
   font-style: normal;
   font-weight: 400;
   font-size: 21.5px;
   line-height: 212%;
-  /* or 212% */
-
-
   color: #333333;
+  margin-left: 10px;
 }
 
 .corrida-box {
-  position: absolute;
+  left: 10px;
   width: 90%;
-  height: 626px;
-  left: 20px;
-  top: calc((100vw + 6630px)/2);
+  position: relative;
+
   font-family: 'Merriweather';
   font-style: normal;
   font-weight: 400;
   font-size: 21.5px;
   line-height: 212%;
-  /* or 212% */
 
 
   color: #333333;
@@ -701,11 +675,17 @@ button {
 
   width: 102px;
   height: 34px;
+  margin-top: 5%;
   font-style: normal;
   font-weight: 700;
 
   line-height: 212%;
   color: #333333;
+}
+
+.corrida-titulo {
+  margin-top: 10px;
+  margin-bottom: 9px;
 }
 
 .continue-bem-informado {
@@ -714,56 +694,45 @@ button {
 
 /* Ad Bottom */
 
-.advertise-bottom-page {
-  display: block;
-  position: relative;
-  width: 90%;
-  height: 250px;
-  left: 5%;
-  top: calc((100vh + 5550px)/2);
-}
+
 
 .advertise-image {
-  width: fit-content;
-  height: 80%;
+  width: 100%;
   cursor: pointer;
 }
 
 /* Bottom */
 
 .bottom-section {
-
-  position: relative;
-  width: 100%;
-  left: -5%;
-  top: calc((100vw - 520px)*2);
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 90%;
 
 }
 
 .fique-informado {
 
-  position: absolute;
-  width: 302px;
-  height: 90px;
-  left: 24px;
-  top: 4592px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 10px;
+  align-items: center;
+  gap: 6px;
+
 }
 
 .fique-sempre {
-  position: absolute;
-  height: 23px;
-  left: -35px;
-  right: 0%;
-  top: calc(90% - 23px/2 - 22.5px);
-  display: block;
+
+
   text-align: center;
-  width: 100vw;
 
 
+  width: 100%;
   font-family: 'Merriweather';
   font-style: normal;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 23px;
   line-height: 23px;
 
 
@@ -775,7 +744,7 @@ button {
 
 .rectangle {
 
-  position: absolute;
+
   left: 26.43%;
   right: 24.43%;
   top: 80.67%;
@@ -785,7 +754,7 @@ button {
 }
 
 .siga-em {
-  position: absolute;
+
   height: 16px;
   left: 60px;
   right: 14.34%;
@@ -803,29 +772,29 @@ button {
 }
 
 .google-bottom {
-  left: 85px;
-  top: 135%
+  width: 50%;
+
 }
 
 .newsletter-box {
-  position: absolute;
-  width: 90vw;
-  height: 111px;
-  padding-bottom: 15px;
-  left: 0px;
-  top: 4762px;
+
+  width: 102%;
+  align-items: left;
+  padding: 10px;
+
   background-color: #F7F7F7;
   border-top: 1px solid #D8D8D8;
   border-bottom: 1px solid #D8D8D8;
 }
 
+.newletter-form {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
 .receba {
-  position: absolute;
-  height: 16px;
-  left: 3.12%;
-  right: 43.75%;
-  top: calc(45% - 16px/2 - 40.5px);
-  width: 350px;
+
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 700;
@@ -837,27 +806,18 @@ button {
 }
 
 .comece {
-  position: absolute;
-  left: 0.25%;
-  right: 3.12%;
-  top: 15.52%;
-  bottom: 50.45%;
 
   font-family: 'Merriweather';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  padding: 10px;
   color: #9B9B9B;
 }
 
 .envie-email {
-  position: absolute;
-  left: 3.12%;
-  right: 43.44%;
-  top: 57.05%;
-  bottom: 10.81%;
+
+
   width: 44%;
   height: 40px;
   font-family: 'Roboto Condensed';
@@ -874,11 +834,9 @@ button {
 }
 
 .btn-send {
-  position: absolute;
+
   width: 140px;
   height: 40px;
-  left: 210px;
-  top: 72.5px;
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 700;
@@ -896,19 +854,18 @@ button {
 /* Social Bottom */
 
 .social-bottom {
-  position: absolute;
-  width: 184px;
-  height: 30px;
-  left: 85px;
-  top: 4903px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  margin-left: 25%;
 }
 
 .compartilhe {
-  position: absolute;
-  height: 22px;
-  left: 0%;
-  right: 64.67%;
-  top: calc(50% - 22px/2);
+
+
+  position: relative;
+  top: 5px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -927,17 +884,16 @@ button {
 /* Comentários */
 
 .comentarios {
-  position: relative;
-  width: 268px;
-  height: 54px;
-  left: 15%;
-  bottom: 0;
-  top: calc((100vw + 2000px)*2);
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
   padding-bottom: 70px;
 }
 
 .comment-btn {
-  position: absolute;
+
   left: 0%;
   right: 0%;
   top: 0%;
@@ -958,7 +914,7 @@ button {
 }
 
 .para-comentar {
-  position: absolute;
+
   height: 14px;
   left: -15%;
   width: 330px;
@@ -985,21 +941,15 @@ button {
 
 /* Desktop 992px */
 
-@media only screen and (min-width: 782px) {
+
+@media only screen and (min-width: 992px) {
   .nav-box {
     width: 100%;
 
   }
 
   .nav-menu {
-    position: fixed;
-    width: 100%;
     height: 58px;
-    top: 0px;
-    right: 0px;
-    z-index: 1;
-    background-color: #fff;
-    box-shadow: inset 0px -1px 0px rgba(217, 217, 217, 0.498039), inset 0px 1px 0px rgba(217, 217, 217, 0.498039);
   }
 
   .hamburguer {
@@ -1012,9 +962,9 @@ button {
   }
 
   .logo-container {
-    position: absolute;
+    position: relative;
     height: 16px;
-    left: 50%;
+    left: 5%;
     top: calc(50% - 16px/2 - 0.5px);
     display: flex;
     justify-content: center;
@@ -1033,8 +983,7 @@ button {
     position: relative;
     width: 40px;
     height: 40px;
-    right: 200%;
-    top: -5px;
+    left: -200%;
     background: #FAFAFA;
     border: 1px solid rgba(217, 217, 217, 0.498039);
     border-radius: 4px;
@@ -1061,9 +1010,9 @@ button {
   }
 
   .topico {
-    position: absolute;
+    position: relative;
     height: 31px;
-    left: 550px;
+    left: 150%;
     right: 60.61%;
     top: calc(20% - 31px/2 + 3.5px);
 
@@ -1087,24 +1036,18 @@ button {
   }
 
   .navbar-section {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 58px;
     left: 0px;
     top: 0px;
   }
 
-  .navbar-nav {
-    width: fit-content;
-  }
 
   .title {
     position: relative;
     left: 90.86%;
     right: 68.45%;
-    bottom: 4px;
-
-
 
   }
 
@@ -1112,7 +1055,7 @@ button {
 
     width: 195px;
     height: 40px;
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 1px;
     display: flex;
@@ -1120,9 +1063,7 @@ button {
     justify-content: space-between;
   }
 
-  .tablet {
-    right: -150px;
-  }
+
 
   .icon-circle {
     background: #FAFAFA;
@@ -1180,14 +1121,14 @@ button {
   }
 
   .breadcrumb {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100px;
     height: 24px;
-    left: 10%;
-    top: 68px;
+    left: -175%;
+    top: 50px;
     font-style: normal;
     font-size: 12px;
     line-height: 14px;
@@ -1208,21 +1149,18 @@ button {
   /* Título */
 
   .page-title {
-    position: absolute;
+    position: relative;
     width: 80%;
     height: 133px;
     left: 80px;
-    top: 105px;
+    bottom: 30%;
 
   }
 
   .titulo-oscar {
-    position: absolute;
+
     width: 100%;
     height: 14px;
-    left: 0%;
-    right: 93.68%;
-    top: calc(50% - 14px/2 - 59.5px);
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -1238,19 +1176,14 @@ button {
   .titulo-repercusao {
     font-size: 38px;
     line-height: 40px;
-    position: absolute;
+
     height: 80px;
-    left: 0%;
-    right: 0%;
-    top: calc(50% - 80px/2 - 2.5px);
+
+
   }
 
   .subtitulo-repercusao {
-    position: absolute;
-    height: 19px;
-    left: 0%;
-    right: 3.97%;
-    top: calc(60% - 19px/2 + 57px);
+
     width: 100%;
     font-family: 'Roboto';
     font-style: normal;
@@ -1267,9 +1200,8 @@ button {
 
   /* Publicidade */
   .ad-section {
-    position: absolute;
-    width: 100%;
-    height: 272px;
+    position: relative;
+    width: 90%;
     left: 0px;
     top: 285px;
 
@@ -1295,7 +1227,7 @@ button {
 
 
   .ad-img {
-    position: absolute;
+    position: relative;
     height: 90%;
     left: 17.49%;
     right: 14.49%;
@@ -1307,13 +1239,14 @@ button {
   /* Autor */
 
   .colunista-box {
-    position: relative;
+
     display: flex;
     flex-direction: row;
-    width: 60%;
-    height: 80px;
-    left: 10%;
-    top: -410px;
+    width: 50%;
+    top: 25%;
+    margin-left: 100px;
+    position: relative;
+
   }
 
   .compartilhe-colunista {
@@ -1324,8 +1257,7 @@ button {
     font-weight: 400;
     font-size: 12px;
     line-height: 22px;
-    left: 20%;
-    bottom: 47.5%;
+
     /* identical to box height, or 183% */
 
 
@@ -1333,54 +1265,39 @@ button {
   }
 
   .social-networks {
-    position: relative;
-    left: 100%;
-    bottom: 70%;
+
+    left: 10%;
+
 
   }
 
-  .google-news {
-    position: relative;
-    top: -96%;
-    left: 180%;
-    width: 155px;
-    height: 30px;
 
-  }
 
   .siga-google {
-    position: relative;
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 14px;
-    width: 100%;
     text-align: center;
     text-transform: uppercase;
-    position: absolute;
     height: 14px;
-    left: -30%;
-    top: calc(50% - 14px/2);
     color: #333333;
   }
 
-  .google-img {
-    left: 70%;
-    top: .5%;
-    width: 55%;
-  }
+
 
   /* Sidebar */
 
   .sidebar-box {
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: absolute;
     width: 21.5%;
     bottom: 20%;
     left: 72%;
-    top: 460px;
+    top: 660px;
 
   }
 
@@ -1414,7 +1331,7 @@ button {
   }
 
   .mais-lidas {
-    position: relative;
+    margin-top: 30px;
     width: 310px;
     margin-bottom: 2px;
     display: flex;
@@ -1454,7 +1371,7 @@ button {
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
-    position: relative;
+
     bottom: 4%;
     left: 2%;
     color: #004071;
@@ -1466,31 +1383,20 @@ button {
   }
 
   .artigo-section {
-    position: relative;
+
     width: 60%;
-    height: 3039px;
-    right: 2%;
-    top: -1420px;
-
-
-  }
-
-  .artigo-img {
+    left: 7%;
+    top: 30%;
     position: relative;
-    width: 100%;
-    height: 150%;
-    bottom: 500px;
-    left: 20%;
+
+
   }
 
-  .legenda-completa {
-    position: relative;
-    left: 19.5%;
-    top: 30px;
-  }
+
+
 
   .legenda-img {
-    position: relative;
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -1502,47 +1408,30 @@ button {
   }
 
   .fonte-src {
-    position: relative;
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 183%;
-    top: -100px;
-    left: 7%;
+
+
 
 
 
     color: #777777;
   }
 
-  .camera {
-    position: relative;
-    top: -22px;
-    left: 2%;
-  }
-
-  .text-to-speech {
-    position: relative;
-    width: 94%;
-    height: 50px;
-    left: 22%;
-    top: -50px;
-
-
-  }
 
   .corpo-artigo {
-    display: block;
-    position: relative;
+
     font-family: 'Merriweather';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 200%;
     width: 94%;
-    left: 27%;
-    top: 37.5%;
+
 
 
 
@@ -1550,9 +1439,10 @@ button {
   }
 
   .audio-exemple-standing {
-    position: relative;
+
     height: 50px;
-    top: 5%;
+    top: 10px;
+
     width: 100%;
   }
 
@@ -1560,14 +1450,21 @@ button {
   /* Leia Mais */
 
   .leia-mais-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
     position: relative;
+    top: 27.5%;
     width: 60%;
-    height: 294px;
-
-    top: -2900px;
     border: none;
     display: flex;
+    ;
+  }
+
+  .leia-coluna {
+    display: flex;
     flex-direction: row;
+    gap: 2em;
   }
 
   .leia-mais-titulo {
@@ -1578,44 +1475,27 @@ button {
     line-height: 25px;
     text-transform: uppercase;
     border-top: 2px solid #D1D1D1;
-    width: 29%;
+    width: 30%;
     padding-top: 20px;
-    top: -70px;
-    left: 17%;
+
+
     color: #191919;
   }
 
+
+
   .artigo-card {
-    position: relative;
-    top: 0%;
-    height: fit-content;
-    margin-top: 20px;
-    left: 3%;
-
-    ;
+    flex-direction: column;
+    top: 0;
+    justify-content: space-evenly;
   }
 
-  .artigo-card:nth-child(2) {
-    top: 0%;
-    position: relative;
-    height: fit-content;
-    margin-top: 20px;
-  }
-
-  .artigo-card:nth-child(3) {
-    top: 0%;
-    left: 3.8%;
-    height: fit-content;
-    margin-top: 20px;
-    position: relative;
-    width: 50%;
 
 
-  }
 
 
   .card-img {
-    width: auto;
+    width: 255px;
     height: auto;
     position: relative;
     border-radius: 2px;
@@ -1641,28 +1521,22 @@ button {
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
-    top: 135px;
-    width: 100%;
-    left: 0%;
     color: #666666;
   }
 
   .leia-rectangle-bottom {
-    position: absolute;
-    left: 16%;
-    right: 69.32%;
-    top: 95.32%;
-    bottom: 0%;
+
+
 
     border: 1px solid #D1D1D1;
   }
 
   .repercusao-box {
-    position: relative;
+    margin-top: 15%;
+    margin-left: 7%;
     width: 57%;
     height: fit-content;
-    left: 10.5%;
-    top: -2900px;
+
 
   }
 
@@ -1678,11 +1552,10 @@ button {
   }
 
   .corrida-box {
-    position: relative;
+
     width: 57%;
     height: fit-content;
-    left: 10.5%;
-    top: -2640px;
+
   }
 
   .continucação-paragrafo {
@@ -1694,36 +1567,37 @@ button {
     color: #333333;
   }
 
-  .corrida-box .continucação-paragrafo:last-of-type {
-    top: 120px;
-    position: relative;
+  .corrida-box {
+    margin-left: 7%;
+    margin-top: 30px;
   }
 
   .advertise-bottom-page {
-    position: relative;
-    top: -2880px;
-    left: 17%;
-    width: fit-content;
+    margin-left: 12.5%;
+    width: 60%;
   }
 
 
   .continue-bem-informado {
     display: flex;
     flex-direction: column;
-    width: fit-content;
-    position: relative;
-    top: -2860px;
-    left: 27.5%;
     align-items: center;
+    margin: 10px 0;
 
 
+  }
+
+  .rectangle {
+    width: 10%;
   }
 
   .continue-rectangle {
     border: 1px solid #D8D8D8;
-    width: 50%;
+    width: 20%;
     margin: 15px 0;
   }
+
+
 
   .continue-text {
 
@@ -1752,22 +1626,18 @@ button {
 
   }
 
-  .continue-e-assine {
-    top: calc(50% - 16px/2 + 21.5px);
-  }
 
   .bottom-section {
     width: 80%;
-    position: relative;
 
-    top: -2500px;
-    bottom: 0;
+
   }
 
   .fique-informado {
+
+
     position: relative;
-    top: -50px;
-    left: 20%;
+    left: -5%;
     align-items: center;
   }
 
@@ -1775,8 +1645,8 @@ button {
     position: relative;
     top: 0;
     bottom: 0;
-    width: 80%;
-    left: 13%;
+    width: 70%;
+    left: 10%;
 
   }
 
@@ -1788,17 +1658,14 @@ button {
 
   .comentarios {
 
-    height: 54px;
-    bottom: 0;
-    top: -2500px;
-    left: 40%;
+
     padding-bottom: 100px;
-    position: relative;
+
     width: 60%;
   }
 
   .comment-btn {
-    position: relative;
+
     width: 27%;
     left: 1%;
   }
@@ -1808,49 +1675,13 @@ button {
     top: 50px;
   }
 
-  .fique-informado {
-    position: relative;
-    left: 35%;
-  }
-
-  .fique-sempre {
-    top: -30px;
-    font-size: 22px;
-    left: 5%;
-    width: 100%;
-  }
-
-  .rectangle {
-    position: relative;
-    left: 2%;
-    width: 50%;
-    top: 15%;
-  }
-
-  .google-bottom {
-    left: 25%;
-    top: 60px;
-  }
-
-  .siga-em {
-    left: 22%;
-    top: 35%;
-  }
 
   .envie-email {
     width: 75%;
   }
 
-  .btn-send {
-    position: relative;
-    left: 82%;
-  }
-
-  .social-bottom {
-    position: relative;
-    bottom: 0;
-    top: 30px;
-    left: 25%;
+  .google-bottom {
+    width: 12%;
   }
 
   .networks-bottom {

@@ -2,11 +2,11 @@ import React from "react";
 import { useMediaQuery } from "react-responsive";
 
 const Mobile = ({ children }) => {
-  const isMobile = useMediaQuery({ maxWidth: 782 });
+  const isMobile = useMediaQuery({ maxWidth: 992 });
   return isMobile ? children : null;
 };
 const Desktop = ({ children }) => {
-  const isDesktop = useMediaQuery({ minWidth: 782 });
+  const isDesktop = useMediaQuery({ minWidth: 992 });
   return isDesktop ? children : null;
 };
 
@@ -34,8 +34,8 @@ function Artigo() {
             Após dois anos, longa voltou a ser elegível para concorrer ao Oscar
             2021 e causou grande repercussão
           </p>
-          <p className="fonte-src">(foto: Divulgação)</p>
         </div>
+        <p className="fonte-src">(foto: Divulgação)</p>
         <div className="text-to-speech">
           {/* <audio
             controls
@@ -53,7 +53,7 @@ function Artigo() {
           <Desktop>
             <img
               className="audio-exemple-standing"
-              src="imagens/audio-desktop.png"
+              src="imagens/audio-desktop-corrigido.png"
               alt="exemplo de audio"
             ></img>
           </Desktop>

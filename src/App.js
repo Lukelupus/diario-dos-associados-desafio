@@ -7,7 +7,7 @@ import Colunista from "./Components/Colunista";
 import Artigo from "./Components/Artigo";
 import LeiaMais from "./Components/LeiaMais";
 import Continuacao from "./Components/Continuacao";
-import ContinueBemInformadoModal from "./Components/ContinuaBemInformadoModal";
+
 import Advertise from "./Components/Advertise";
 import Bottom from "./Components/Bottom";
 import Comentarios from "./Components/Comentarios";
@@ -21,10 +21,7 @@ const Mobile = ({ children }) => {
   const isMobile = useMediaQuery({ maxWidth: 991 });
   return isMobile ? children : null;
 };
-const Tablet = ({ children }) => {
-  const isTablet = useMediaQuery({ minWidth: 1260 });
-  return isTablet ? children : null;
-};
+
 const Desktop = ({ children }) => {
   const isDesktop = useMediaQuery({ minWidth: 992 });
   return isDesktop ? children : null;
@@ -83,9 +80,6 @@ function App() {
         subtitulo="Corrida Pelo Oscar"
         texto={corridaPeloOscar}
       />
-      <Tablet>
-        <ContinueBemInformadoModal />
-      </Tablet>
 
       <Bottom />
       <Comentarios />

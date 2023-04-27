@@ -5,12 +5,21 @@ function Colunista(props) {
     <div className="colunista-box">
       <div className="author-box">
         <img src={props.author} alt="autor"></img>
-        <div className="colunista-btn">
-          <p className="colunista-text">Colunista</p>
+        <div className="colunista-btn-data-nome">
+          <div className="colunista-btn">
+            <p className="colunista-text">COLUNISTA</p>
+          </div>
+          <p className="author-name">{props.name}</p>
+
+          <p className="coluna-time">
+            <img
+              className="fav-clock"
+              src="diario-dos-associados-desafio/imagens/Clock.png"
+              alt="clock"
+            ></img>
+            02/02/2021 08:22
+          </p>
         </div>
-        <p className="author-name">{props.name}</p>
-        <img className="fav-clock" src="imagens/Clock.png" alt="clock"></img>
-        <p className="coluna-time">02/02/2021 08:22</p>
       </div>
       <div className="social-box">
         <span className="compartilhe-colunista">compartilhe</span>

@@ -10,6 +10,7 @@ const Desktop = ({ children }) => {
 function Continuacao(props) {
   const { subtitulo, texto, classe, subClasse } = props;
   let modal = true;
+
   return (
     <div className={classe}>
       <h3 className={subClasse}>{subtitulo}</h3>

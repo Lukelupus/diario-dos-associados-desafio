@@ -27,6 +27,7 @@ function Bottom() {
       </div>
       <div className="newsletter-box">
         <span className="receba">receba nossa newsletter</span>
+        <br></br>
         <span className="comece">
           Comece o dia com as notícias selecionadas pelo nosso editor
         </span>

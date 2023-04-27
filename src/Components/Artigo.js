@@ -38,8 +38,8 @@ function Artigo() {
             Após dois anos, longa voltou a ser elegível para concorrer ao Oscar
             2021 e causou grande repercussão
           </p>
-          <p className="fonte-src">(foto: Divulgação)</p>
         </div>
+        <p className="fonte-src">(foto: Divulgação)</p>
         <div className="text-to-speech">
           {/* <audio
             controls

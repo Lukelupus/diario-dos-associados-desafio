@@ -34,7 +34,7 @@ function Navbar(props) {
           <div className="navbar-head">
             <div className="nav-container">
               <nav className="navbar">
-                <div className={login ? "nav-menu" : "nav-menu active"}>
+                <div className="nav-menu">
                   <ul className="navbar-nav">
                     <li className="nav-item active">
                       <a href="/">

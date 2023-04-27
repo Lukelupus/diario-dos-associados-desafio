@@ -21,8 +21,11 @@ function LeiaMais() {
           return (
             <div key={index} className="artigo-card">
               <img className="card-img" src={e.imagem} alt={e.alt}></img>
-              <span className="card-data">{e.data}</span>
-              <span className="card-titulo">{e.titulo}</span>
+              <div className="card-info">
+                <span className="card-data">{e.data}</span>
+                <br></br>
+                <span className="card-titulo">{e.titulo}</span>
+              </div>
             </div>
           );
         })}

@@ -19,7 +19,7 @@ function Bottom() {
         <span className="siga-em">Siga o Estado de Minas no</span>
         <img
           className="google-img google-bottom"
-          src="diario-dos-associados-desafio/imagens/google-news.png"
+          src="imagens/google-news.png"
           alt="Estado de Minas Google News"
           rel="noreferrer"
           target="_blank"

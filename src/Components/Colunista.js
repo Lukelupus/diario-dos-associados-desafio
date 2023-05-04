@@ -72,7 +72,7 @@ function Colunista(props) {
             SIGA NO{" "}
             <img
               className="google-img"
-              src="imagens/google-news.png"
+              src="diario-dos-associados-desafio/imagens/google-news.png"
               alt="Estado de Minas Google News"
             ></img>
           </a>

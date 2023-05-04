@@ -65,14 +65,14 @@ function Navbar(props) {
 
                           <img
                             className="logged-user"
-                            src="imagens/logged-user.png"
+                            src="diario-dos-associados-desafio/imagens/logged-user.png"
                             alt="usuario"
                           ></img>
                         </div>
                         <div className="search" onClick={search}>
                           <img
                             className="search-icon"
-                            src="imagens/search-icon.png"
+                            src="diario-dos-associados-desafio/imagens/search-icon.png"
                             alt="search"
                           ></img>
                           {open && (
@@ -88,7 +88,7 @@ function Navbar(props) {
                           </span>
                           <img
                             className="arrow"
-                            src="imagens/arrow.png"
+                            src="diario-dos-associados-desafio/imagens/arrow.png"
                             alt="arrow"
                           ></img>
                           <span className="crumbs">

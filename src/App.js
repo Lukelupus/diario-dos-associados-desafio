@@ -43,10 +43,16 @@ function App() {
   return (
     <div onClick={closeSearch} className="App">
       <Navbar search={openSearch} open={open} />
-      <Publicidade anuncios={anunciosTopPage} />
-      <Titulo />
+      <Mobile>
+        <Publicidade anuncios={anunciosTopPage} />
+        <Titulo />
+      </Mobile>
+      <Desktop>
+        <Titulo />
+        <Publicidade anuncios={anunciosTopPage} />
+      </Desktop>
       <Colunista
-        author="imagens/tamaki-ryushi-mobile.png"
+        author="diario-dos-associados-desafio/imagens/tamaki-ryushi-mobile.png"
         name="Tamaki Ryushi"
       />
       <Sidebar />
@@ -62,7 +68,7 @@ function App() {
         <Advertise
           position="advertise-bottom-page"
           size="advertise-image"
-          src="imagens/wemobi.png"
+          src="diario-dos-associados-desafio/imagens/wemobi.png"
           alt="We Mobi Viagem"
         />
       </Mobile>
@@ -70,7 +76,7 @@ function App() {
         <Advertise
           position="advertise-bottom-page"
           size="advertise-image"
-          src="imagens/reserva-moda.png"
+          src="diario-dos-associados-desafio/imagens/reserva-moda.png"
           alt="Reserva Moda Camisa"
         />
       </Desktop>

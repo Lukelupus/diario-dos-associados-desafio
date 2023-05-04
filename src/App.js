@@ -43,8 +43,14 @@ function App() {
   return (
     <div onClick={closeSearch} className="App">
       <Navbar search={openSearch} open={open} />
-      <Publicidade anuncios={anunciosTopPage} />
-      <Titulo />
+      <Mobile>
+        <Publicidade anuncios={anunciosTopPage} />
+        <Titulo />
+      </Mobile>
+      <Desktop>
+        <Titulo />
+        <Publicidade anuncios={anunciosTopPage} />
+      </Desktop>
       <Colunista
         author="imagens/tamaki-ryushi-mobile.png"
         name="Tamaki Ryushi"
